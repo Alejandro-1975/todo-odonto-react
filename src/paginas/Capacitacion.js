@@ -1,13 +1,13 @@
-
+import Navbar from './Navbar.js'
 
 function Capacitacion (){
         return(
             <div className="todoOdonto">
-    
+                <Navbar />  
                
                 <div className="head">
                       asdf
-                         
+                            
                 </div>
                 <div>
 

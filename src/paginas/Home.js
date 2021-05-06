@@ -3,7 +3,7 @@
 
 import tarjetas from './tarjetas.js'
 import {Link} from 'react-router-dom'
-import Navbar from '../Navbar.js'
+import Navbar from './Navbar.js'
 
 function Home
 () {
