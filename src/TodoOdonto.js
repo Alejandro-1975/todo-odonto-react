@@ -11,7 +11,7 @@ function TodoOdonto() {
   
   return (
     <Router>
-        <switch>
+        <Switch>
         
           <Route path="/Capacitacion">
               <Capacitacion />
@@ -25,7 +25,7 @@ function TodoOdonto() {
             <NotFound/>
           </Route>
         
-        </switch>
+        </Switch>
       
     </Router>
   );
