@@ -13,6 +13,29 @@
     font-size: 16px;
 
 }
+.banner  {
+    text-align: center;
+    padding: 80px;
+    background-image: url(http://localhost:3000/images/recursos-humanos.jpg);
+    color: rgb(251, 253, 252);
+   }
+
+.banner h1 {
+    font-size: 60px;
+}   
+.banner button {
+    padding: 12px 24px;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+} 
+.banner h1,
+.banner button {
+    margin: 12px;
+  
+}
+.banner .overlay {
+    background: rgba(100,100,100,.4);
+}
 .div-tarjetas-aside {
    margin-top: 6px;
     display:flex;
@@ -54,15 +77,17 @@
     border: 1px solid gray;
 }
 .publicidades {
+    
     height: 40px;
     border: 1px solid gray
 }
 .linksEmpresas {
+    flex-grow: 3;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid gray
 }
-.banner {
+.banner2 {
     display: flex;
     justify-content: space-evenly;
     margin: 12px auto;
