@@ -6,65 +6,65 @@
 }
 
 .head { 
-    height: 100px;
+    height: 60px;
     background: #00263A;
     color: white;
     font-weight: bold;
     font-size: 16px;
+   
 
 }
 .banner  {
     text-align: center;
+    height: 170px;
     padding: 80px;
-    background-image: url(http://localhost:3000/images/recursos-humanos.jpg);
+    background-image: url(http://localhost:3000/images/banner1.jpg);
     color: rgb(251, 253, 252);
    }
 
-.banner h1 {
-    font-size: 60px;
-}   
-.banner button {
-    padding: 12px 24px;
-    border: 1px solid lightblue;
-    border-radius: 3px;
-} 
-.banner h1,
-.banner button {
-    margin: 12px;
-  
-}
-.banner .overlay {
-    background: rgba(100,100,100,.4);
-}
+
 .div-tarjetas-aside {
-   margin-top: 6px;
+  
+    background-color:#00263A ; 
+    margin-top: 0px;
+    padding-top:50px;
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     
 }
 .tarjets {
-    
+    background-color:#00263A ;
     width: 72%;
-    border: 1px solid gray;
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .asides {
+    background-color: lightgray;
     width: 25%;
     border: 1px solid gray;
 }
 
 .tarjet-list {
-    background-image: "http://localhost:3000/images/insumos-odontologicos.jpg";
-    border: 1px solid grey;
-    width: 48%;
-    margin:12px;
-
-
+    background-color: white;
+    border-radius: 20px;    
+    box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
+    width:28%;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
 }
+    
 
+
+
+.tarjets :hover {
+    transform: translateY(-15px);
+    box-shadow: 12px 12px 20px rgba(0,0,0,0.9);
+    
+}
 .tarjet-list name {
     font-weight: bold ;
 }
@@ -86,6 +86,13 @@
     display: flex;
     flex-wrap: wrap;
     border: 1px solid gray
+    
+}
+.linkEmpr {
+    
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray
 }
 .banner2 {
     display: flex;
@@ -103,6 +110,53 @@
     height: 100px;
     border: 1px solid gray
 }
+.entidadesOdontologicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 12px 12px;
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+        
+}
+.entidadesOdontologicas h1 {
+    display: flex;
+    justify-content: left;
+    margin: 12px auto;
+    padding: 12 px;
+    width: 100%;
+    
+    
+}
+.containerEntidades {
+    display: flex;
+    justify-content: left;
+    margin: 12px auto;
+    width: 100%;
+    
+}
+
+.entidad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 12px auto;
+    width: 100%;
+    
+}
+.entidad h5 :hover{
+    visibility: visible;
+    
+}
+.entidad h5 {
+    visibility: hidden;
+    
+}
+
+    
+
 .footer {
 
     height: 100px;
@@ -111,5 +165,44 @@
     font-weight: bold;
     font-size: 16px;
 }
-
-
+.containerCards {
+    display: flex;
+    margin: 12px;
+    flex-wrap: wrap;
+}
+.capacitacionCards {
+    display: flex;
+    margin: 20px;
+    width:40%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.containerCards :hover {
+    transform: translateY(-15px);
+    box-shadow: 12px 12px 20px rgba(0,0,0,0.3);
+}
+.imgCurso img{
+    width: 300px;
+    
+ }
+.dataCurso h2{
+   margin-left:12px;
+  
+    text-align: left;
+   
+}
+.dataCurso h4 {
+    margin-left:12px;
+   
+    text-transform: capitalize;
+    text-align: left;
+    color: gray;
+}.dataCurso h4.dato {
+    text-align: left;
+    color: gray;
+    font-weight: lighter;
+}

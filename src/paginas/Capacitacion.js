@@ -1,30 +1,50 @@
 import Navbar from './Navbar.js'
 import {Container} from '@material-ui/core'
 import MediaCard from './CardsCapacitacion'
-import tarjetas from './tarjetas'
+import DataCapacitacion from './jsonDataCapacitacion'
  
 function Capacitacion (){
         return(
-            <Container>
+            <div>
                 <Navbar />  
                
                 <div className="head">
                       asdf
                             
                 </div>
+                <div className="banner">   
+            
+              
+            
+                 </div>
                 <div>
 
                     <h1>Capacitacion de Post-Grado</h1>
-                </div>
-                <MediaCard/>
-                {tarjetas.map(function(dato,index){return <div className="tarjet-list" key={index}> 
-                  <h1>{dato.name}</h1>
-                  <img src={dato.imagen} />
-                  <h5>{dato.detalle}</h5>          
+                </div >
+                <div className="containerCards">
+                
+                {DataCapacitacion.map(function(dato,index){return <div className="capacitacionCards" key={index}> 
+                
+                  <div className= "imgCurso">
+                      <img src={dato.imagen} />
+                  </div>
+                  <div className="dataCurso">
+                        
+                        <h4>{dato.ramaOdontologia}</h4>
+                        <h2>Nombre del Curso: {dato.name}</h2>
+                        <h4>Dictante/s: {dato.dictantes}</h4>
+                        <h4>Modalidad del curso: {dato.modalidad}</h4>
+                        
+                        <h4>Carga Horaria: {dato.cargaHoraria}</h4>
+                        <h4>Lugar de realizacion: {dato.lugar}</h4>
+                        <h4>Precio: {dato.precio}</h4>   
+                  </div>       
                </div> }
               
                  )}
-            </Container>
+                 <MediaCard/>
+                 </div>
+            </div>
         )
 }
 

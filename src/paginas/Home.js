@@ -4,6 +4,8 @@
 import tarjetas from './tarjetas.js'
 import {Link} from 'react-router-dom'
 import Navbar from './Navbar.js'
+import jsonEntidadesOd from './jsonEntidadesOd.js'
+import jsonLinksEmpresas from './jsonLinksEmpresas'
 
 function Home
 () {
@@ -18,11 +20,9 @@ function Home
       
        
       </div>
-      <div className="banner">   
-            <div className="overlay">
-                <h1>Lorem ipsum</h1>
-                <button>Learn More</button>
-            </div>      
+        <div className="banner">   
+            
+              
             
         </div>
 
@@ -43,22 +43,27 @@ function Home
           <aside className="asides" >
          
               <aside className="ofertas">
-               adsf
+               <h1>¡¡OFERTAS!!</h1>
+
 
               </aside>
               <aside className="publicidades">
                 
               </aside>
-          
-               <aside className="linksEmpresas">
-                    <a href="https://www.colgateprofesional.com.ar/"target="_blank">
-                    <img src="/images/logos/COLGATE_Logo.jpg"width="100"height ="80"></img>
-                    </a>
+                                   
+        
 
-                    <a href="https://latam.oralb.com/es" target="_blank"> 
-                    <img src="/images/logos/Oral-B-Logo.png"width="100"height ="40">
-                    </img>
-                    </a>
+               <aside className="linksEmpresas">
+                 {jsonLinksEmpresas.map(function(dato,index){return <div className="linkEmpr" key={index}> 
+                 
+                     <h5>{dato.name}</h5>
+                        <a href= {dato.url}target="_blank">
+                          <img src={dato.imagen} width="auto"height ="70"/>
+                        </a>                                 
+           
+                    </div> }    
+                 )}
+                   
 
                </aside>
 
@@ -68,7 +73,22 @@ function Home
         asd
       </div>
       <div className="recomendaciones">
-        asd
+        asdg
+      </div>
+      <div className="entidadesOdontologicas">
+            
+          <h1>Entidades Odontologicas de la Republica Argentina</h1>
+          <div className="containerEntidades">
+           {jsonEntidadesOd.map(function(dato,index){return <div className="entidad" key={index}> 
+                 
+                     <h5>{dato.name}</h5>
+                     <a href= {dato.url}target="_blank">
+                        <img src={dato.imagen} width="auto"height ="70"/>
+                     </a>                                 
+               
+                  </div> }                       
+              )}
+          </div>
       </div>
       <div className="footer">
         asd

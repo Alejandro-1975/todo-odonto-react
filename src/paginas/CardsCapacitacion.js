@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import tarjetas from './tarjetas'
+import DataCapacitacion from './jsonDataCapacitacion'
 
 const useStyles = makeStyles({
   root: {
@@ -24,14 +24,14 @@ export default function MediaCard() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        {tarjetas.map(function(dato,index){return <CardMedia className={classes.media} key={index}
+        {DataCapacitacion.map(function(dato,index){return <CardMedia className={classes.media} key={index}
                                
-                  image={dato.imagen}
+                 image={dato.imagen}
                  title={dato.name}
                   /> }
               
-                 )}
-          className={classes.media}
+                
+                  )}
           
         
         <CardContent>
@@ -53,5 +53,6 @@ export default function MediaCard() {
         </Button>
       </CardActions>
     </Card>
+   
   );
 }

@@ -13,7 +13,7 @@ function TodoOdonto() {
   return (
     <Router>
         <Switch>
-          <Route path="/PageDetalleCapacitacion">
+          <Route path="/DetalleCapacitacion">
               <detalleCursos/>
           </Route>
           <Route path="/Capacitacion">
