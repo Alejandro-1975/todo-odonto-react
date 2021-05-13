@@ -3,7 +3,8 @@ export default  [
      // hay que crear una lista con el modalidad del curso que es
      // de estos datos debemos crear filtros de busqueda
     {
-        "ramaOdontologia": "OPERATORIA DENTAL - ESTÉTICA DENTAL", //DEBE VENIR DE UN LISTADO DE ramas de la odontologia de las cuales se pueden elegir 2 o 3
+      "id": "1",
+      "ramaOdontologia": "OPERATORIA DENTAL - ESTÉTICA DENTAL", //DEBE VENIR DE UN LISTADO DE ramas de la odontologia de las cuales se pueden elegir 2 o 3
         "modalidad": "TEORICO", // DEBE VENIR DE UN LISTADO DE MODALIDADES
         "name":"Estetica de  la Sonrisa",
         "dictantes": "Pedro Herrera-Marcos Sandunga",
@@ -17,7 +18,8 @@ export default  [
          "formasDePago": "Tarjetas-Link pagos", //crear listado de formas de pago
    },
 
- {       "ramaOdontologia": "ENDODONCIA", //DEBE VENIR DE UN LISTADO DE ramas de la odontologia de las cuales se pueden elegir 2 o 3
+ { "id": "2",      
+   "ramaOdontologia": "ENDODONCIA", //DEBE VENIR DE UN LISTADO DE ramas de la odontologia de las cuales se pueden elegir 2 o 3
             "modalidad": "TEORICO-WORKSHOP", // DEBE VENIR DE UN LISTADO DE MODALIDADES
             "name":"Curso de Post-Grado en endodoncia en elementos multirradiculares",
             "dictantes": "Dra. Paola Lammertyn- Dra. Monica Arca",

@@ -3,7 +3,7 @@
 import './TodoOdonto.css';
 
 import Home from './paginas/Home.js'
-import Capacitacion from './paginas/Capacitacion'
+import CardCapacitacion from './paginas/CardCapacitacion'
 import NotFound from './paginas/404'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import detalleCursos from './paginas/PageDetalleCapacitacion';
@@ -13,13 +13,13 @@ function TodoOdonto() {
   return (
     <Router>
         <Switch>
-          <Route path="/DetalleCapacitacion">
+          <Route path="/items/:id">
               <detalleCursos/>
           </Route>
-          <Route path="/Capacitacion">
-              <Capacitacion />
+         
+          <Route path="/capacitaciones">
+              <CardCapacitacion />
           </Route>
-    
           <Route path="/"exact> 
                 <Home />
           </Route>   
@@ -36,3 +36,5 @@ function TodoOdonto() {
    
 
 export default TodoOdonto;
+
+// ruta de categorias segun id 1 a 9  que a su vez llevan a la ruta de items por id 

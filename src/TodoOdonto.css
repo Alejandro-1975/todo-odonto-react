@@ -6,23 +6,41 @@
 }
 
 .head { 
-    height: 60px;
+    overflow: hidden;
     background: #00263A;
     color: white;
     font-weight: bold;
     font-size: 16px;
+    margin:0px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  top: 0;
    
 
 }
 .banner  {
-    text-align: center;
-    height: 170px;
-    padding: 80px;
-    background-image: url(http://localhost:3000/images/banner1.jpg);
-    color: rgb(251, 253, 252);
+    margin:0px;
+    width: 100%;
+    height: 300px;
+   
+    background-image: url(http://localhost:3000/images/consultorio.jpg);
+    background-size: 120%;
+    animation: movimiento 30s infinite linear alternate;
    }
+   @keyframes movimiento{
+       from{background-position: bottom left;
+    }to{
+        background-position: top right;}
+    }
+.banner .capa-gradiente {
+ width: 100%;
+ height: 32.8%;
+ position: absolute;
+ background: -webkit-linear-gradient(left,black,#00263A);
+ opacity: 0.5;
+}
 
-
+   
 .div-tarjetas-aside {
   
     background-color:#00263A ; 
@@ -47,6 +65,8 @@
 }
 
 .tarjet-list {
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;    
     box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
@@ -54,13 +74,26 @@
     margin: 20px;
     overflow: hidden;
     text-align: center;
+    
     transition: all 0.25s;
 }
     
+.tarjet-list p {
+    visibility: hidden;
+}
+.tarjet-list:hover p{
+    visibility: visible;
+    color:black
+}
 
 
+.tarjet-list a{
+    text-decoration: none;
+    color: black;
+}
 
-.tarjets :hover {
+
+.tarjet-list:hover {
     transform: translateY(-15px);
     box-shadow: 12px 12px 20px rgba(0,0,0,0.9);
     
@@ -82,18 +115,41 @@
     border: 1px solid gray
 }
 .linksEmpresas {
-    flex-grow: 3;
+       
     display: flex;
     flex-wrap: wrap;
     border: 1px solid gray
     
+}
+.linksEmpresas h2{
+       
+    margin: 6px;
+    display: block;
+    width:100%;
 }
 .linkEmpr {
-    
-    display: flex;
+    margin:8px 5px;
+    padding: 2px;
+    background-color: white;
+    display: block;
     flex-wrap: wrap;
-    border: 1px solid gray
+  border-radius: 10px;
 }
+.linkEmpr h6{
+   margin:2px;
+   color:#00263A;
+    visibility: hidden;
+   text-align: center;
+   transition: all .5s;
+}
+.linkEmpr:hover h6{
+    visibility: visible;
+    text-align: center;
+    transition: all .1s;
+    flex-direction: column;
+    margin: 0px;
+   
+ }
 .banner2 {
     display: flex;
     justify-content: space-evenly;
@@ -139,21 +195,30 @@
 }
 
 .entidad {
-    display: flex;
+    display: block;
+    text-align: center;
     flex-direction: row;
     align-items: center;
     margin: 12px auto;
     width: 100%;
     
 }
-.entidad h5 :hover{
-    visibility: visible;
+.entidad h6{
+    margin:2px;
+     visibility: hidden;
+    text-align: center;
+    transition: all .1s;
+ }
+ .entidad:hover h6{
+     visibility: visible;
+     text-align: center;
+     transition: all .5s;
+     flex-direction: column;
+     margin: 0px;
+  }
+
     
-}
-.entidad h5 {
-    visibility: hidden;
-    
-}
+
 
     
 
@@ -181,14 +246,20 @@
     overflow: hidden;
     transition: all 0.25s;
 }
-.containerCards :hover {
+.capacitacionCards:hover {
     transform: translateY(-15px);
     box-shadow: 12px 12px 20px rgba(0,0,0,0.3);
 }
+.capacitacionCards a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+
+}
 .imgCurso img{
-    width: 300px;
-    
- }
+    width: 300px;}
+
+
 .dataCurso h2{
    margin-left:12px;
   
@@ -197,12 +268,16 @@
 }
 .dataCurso h4 {
     margin-left:12px;
-   
     text-transform: capitalize;
     text-align: left;
     color: gray;
-}.dataCurso h4.dato {
+}
+.dataCurso h4.dato {
+    text-decoration: none;
     text-align: left;
     color: gray;
     font-weight: lighter;
 }
+.dataCurso p { 
+    text-decoration: none;  
+ }

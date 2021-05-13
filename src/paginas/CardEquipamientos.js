@@ -2,14 +2,15 @@ import Navbar from './Navbar.js'
 import {Container} from '@material-ui/core'
 import MediaCard from './CardsCapacitacion'
 import DataCapacitacion from './jsonDataCapacitacion'
+import {Link} from 'react-router-dom'
  
-function Capacitacion (){
+function InsumosOd (){
         return(
             <div>
                 <Navbar />  
                
                 <div className="head">
-                      asdf
+                     EQUIPAMIENTOS
                             
                 </div>
                 <div className="banner">   
@@ -23,7 +24,11 @@ function Capacitacion (){
                 </div >
                 <div className="containerCards">
                 
-                {DataCapacitacion.map(function(dato,index){return <div className="capacitacionCards" key={index}> 
+                {DataCapacitacion.map(function(dato,index){
+                    return (
+                
+                    <div className="capacitacionCards" key={index}> 
+                    <Link to={`insumos/${dato.id}`}> 
                 
                   <div className= "imgCurso">
                       <img src={dato.imagen} />
@@ -38,8 +43,11 @@ function Capacitacion (){
                         <h4>Carga Horaria: {dato.cargaHoraria}</h4>
                         <h4>Lugar de realizacion: {dato.lugar}</h4>
                         <h4>Precio: {dato.precio}</h4>   
-                  </div>       
-               </div> }
+                  </div> 
+                   </Link>     
+               </div> ) 
+              
+               }
               
                  )}
                  <MediaCard/>
@@ -48,4 +56,4 @@ function Capacitacion (){
         )
 }
 
-export default Capacitacion
+export default InsumosOd

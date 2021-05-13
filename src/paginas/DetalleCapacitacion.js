@@ -3,22 +3,22 @@ import {useState, useEffect} from 'react'
 
 
 function DetalleCapacitacion(){
-    var {id} = useParams()
+   // var {id} = useParams()
 
-    var [curso, setCurso] = useState({})
+   // var [curso, setCurso] = useState({})
 
-    useEffect(() => { 
-        fetch('https://jsonplaceholder.typicode.com/posts/' +id).then(function(res) {
-        return res.json()
-}).then(function (item) {
-    setCurso(item)
-})
+    //useEffect(() => { 
+      //  fetch('https://jsonplaceholder.typicode.com/posts/' +id).then(function(res) {
+       // return res.json()
+//}).then(function (item) {
+  ////  setCurso(item)
+//})
     
-},[])
+//},[])
 
 return (
     <div>
-       
+        asdggasag
     </div>
 )
 }
