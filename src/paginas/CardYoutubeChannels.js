@@ -1,14 +1,62 @@
+
+import Navbar from './Navbar.js'
 import {Container} from '@material-ui/core'
 
-function YouTubeChannels (){
-    return(
-        <Container>
-          <a href="https://www.youtube.com/user/NeodentOficial"target="_blank">
-                    <img src="/images/logos/COLGATE_Logo.jpg"width="100"height ="80"></img>
-                    </a>  
-           
-        </Container>
-        )
-}
+import DataChannel from './jsonYoutubeChannels.js'
+import {Link} from 'react-router-dom'
+ 
+function YoutubeChannels (){
+        return(
+            <Container maxWidth>
+                <Navbar />  
+               
+                <div className="head">
+                <h1>Canales de Youtube relacionados a la ODONTOLOGÍA</h1>
+                            
+                </div>
+                <div className="banner">   
+            
+              
+            
+                 </div>
+                <div>
 
-export default YouTubeChannels
+                    <h1>Canales de Youtube relacionados a la ODONTOLOGÍA</h1>
+                </div >
+                <div className="containeryoutubeCards">
+                
+                {DataChannel.map(function(dato,index){
+                    return (
+                
+                 <div className="youtubeCards" key={index}> 
+                   
+                
+                  <div className= "imgCurso">
+                                      
+                    <a href= {dato.url}target="_blank">
+                        <img src={dato.logo} />
+                    </a>  
+                    <div className="datosYoutubeCh">
+                        <h4>{dato.name}</h4>    
+                        <p><b>Categoria:</b> {dato.ctgy}</p> 
+                        <p><b>Idioma:</b> {dato.idioma}</p> 
+                        <p><b>Detalle:</b> {dato.detail}</p> 
+                    </div>
+                  </div>                              
+                                            
+                
+                   
+               </div> ) 
+              
+               }
+              
+                 )}
+                 
+                 </div>
+            </Container>
+        )
+}                          
+                        
+                  
+
+export default YoutubeChannels

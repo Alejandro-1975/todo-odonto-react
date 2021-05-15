@@ -7,12 +7,16 @@ import CardCapacitacion from './paginas/CardCapacitacion'
 import NotFound from './paginas/404'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import detalleCursos from './paginas/PageDetalleCapacitacion';
+import YoutubeChannels from './paginas/CardYoutubeChannels'
 
 function TodoOdonto() {
   
   return (
     <Router>
         <Switch>
+        <Route path="/youtube-channels">
+              <YoutubeChannels />
+          </Route>
           <Route path="/items/:id">
               <detalleCursos/>
           </Route>
