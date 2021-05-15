@@ -281,11 +281,14 @@
 .dataCurso p { 
     text-decoration: none;  
  }
+
+
+
+ 
  .youtubeCards {
     display: flex;
-    margin: 20px;
-    width:40%;
-   
+    margin: 12px;
+    width:48%;   
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
@@ -310,23 +313,59 @@
 .datosYoutubeCh p{
     display: inline-block;
     width: auto;
-    margin: 10px 20px;
+    margin: 10px ;
     text-align: justify;
-    
+    font-size: 12px;
 }
 .datosYoutubeCh h4{
     display: inline-block;
     width: auto;
-    margin: 10px 20px;
+    margin: 10px 0px;
+    margin-left: 6px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
 }
 .containeryoutubeCards{    
-    width:100%;
+    width: 72%;
     margin:0px;
-    margin-top: 50 px;
+    margin-top: 0px;
     background-color: black;
     display: flex;
     margin: 12px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;      
+    justify-content: space-evenly;
+   
 }
+.containeryoutubeCardsTitle {    
+    
+    display: inline-block;
+    color: white;
+    font-size: 28px;
+    width:100%;
+    margin:20px;
+   
+}
+.containeryoutubeCardsTitle h1{    
+      
+    color: white;
+    font-size: 28px;
+   width: 100%;
+    
+}
+.publicidades{
+    color: white;
+    width: 25%;
+    background-color: black;
+
+}
+.cards-aside-ytch {
+  
+    background-color:black ; 
+    margin-top: 0px;
+    padding-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+
+

@@ -19,7 +19,7 @@ export default  [
 },
 
 {"id" : 3,
-"name": "I + D 24x7x365 Inteligencia Dental",
+"name": "I + D 24x7x365 ",
 "url": "https://www.youtube.com/user/ID24x7x365",
 "detail": "Conferencias gratuitas online",
 "ctgy" : "Odontologia-general",
