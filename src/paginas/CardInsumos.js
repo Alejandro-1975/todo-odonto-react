@@ -20,7 +20,7 @@ function InsumosOd (){
                  </div>
                 <div>
 
-                    <h1>Capacitacion de Post-Grado</h1>
+                    <h1>INSUMOS</h1>
                 </div >
                 <div className="containerCards">
                 

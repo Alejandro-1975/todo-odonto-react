@@ -7,15 +7,27 @@ import CardCapacitacion from './paginas/CardCapacitacion'
 import NotFound from './paginas/404'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import detalleCursos from './paginas/PageDetalleCapacitacion';
-import YoutubeChannels from './paginas/CardYoutubeChannels'
+import CardYoutubeChannels from './paginas/CardYoutubeChannels'
+import CardInstrumental from './paginas/CardInstrumental'
+import CardInsumos from './paginas/CardInsumos'
+import CardEquipamientos from './paginas/CardEquipamientos'
 
 function TodoOdonto() {
   
   return (
     <Router>
         <Switch>
-        <Route path="/youtube-channels">
-              <YoutubeChannels />
+         <Route path="/equipamiento">
+              <CardEquipamientos />
+          </Route>
+          <Route path="/insumos">
+              <CardInsumos />
+          </Route>
+          <Route path="/instrumental">
+              <CardInstrumental />
+          </Route>
+          <Route path="/youtube">
+              <CardYoutubeChannels />
           </Route>
           <Route path="/items/:id">
               <detalleCursos/>

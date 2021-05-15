@@ -33,7 +33,7 @@ function Home
                {tarjetas.map(function(dato,index){
                  return (
                  <div className="tarjet-list" key={index}> 
-                  <Link to={`capacitaciones/${dato.id}`}> 
+                  <Link to={`${dato.ctgy}/${dato.id}`}> 
                     <h1>{dato.name}</h1>
                     <img src={dato.imagen} />
                     <p>{dato.detalle}</p>  
