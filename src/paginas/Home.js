@@ -14,12 +14,10 @@ function Home
   return (
     <div className="todoOdonto">
       <SearchAppBar/>
-      <Navbar />
-      
+           
       <div className="head">
-        <img src="/images/logos/todoodonto-2.jpg"width="auto"height ="85"/>
-        <p>"Todo lo que necesitas de Odontología en un solo lugar"</p>
-      
+        
+        <Navbar />
        
       </div>
         <div className="banner"> 
@@ -53,18 +51,18 @@ function Home
 
               </aside>
               <aside className="publicidades">
-                
+                  publicidades
               </aside>
                                    
         
 
                <aside className="linksEmpresas">
                  <h2> Links a empresas relacionadas</h2>
-                 {jsonLinksEmpresas.map(function(dato,index){return <div className="linkEmpr" key={index}> 
+                 {jsonLinksEmpresas.map(function(dato){return <div className="linkEmpr" key={dato.id}> 
                  
                      <h6>{dato.name}</h6>
                         <a href= {dato.url}target="_blank">
-                          <img src={dato.imagen} width="auto"height ="70"/>
+                          <img src={dato.imagen} />
                         </a>                                 
            
                     </div> }    
@@ -89,7 +87,7 @@ function Home
                  
                      <h6>{dato.name}</h6>
                      <a href= {dato.url}target="_blank">
-                        <img src={dato.imagen} width="auto"height ="70"/>
+                        <img src={dato.imagen} />
                      </a>                                 
                
                   </div> }                       

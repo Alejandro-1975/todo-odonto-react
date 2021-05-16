@@ -1,59 +1,63 @@
+
 import Navbar from './Navbar.js'
 import {Container} from '@material-ui/core'
-import MediaCard from './CardsCapacitacion'
-import DataCapacitacion from './jsonDataCapacitacion'
-import {Link} from 'react-router-dom'
+
+import DataChannel from './jsonYoutubeChannels.js'
+
  
-function InsumosOd (){
+function BlogsOdontologia (){
         return(
             <div>
                 <Navbar />  
                
-                <div className="head">
-                     BLOGS
-                            
-                </div>
+               
                 <div className="banner">   
             
               
             
                  </div>
-                <div>
-
-                    <h1>Capacitacion de Post-Grado</h1>
-                </div >
-                <div className="containerCards">
+                <div className="cards-aside-ytch">
+                 <div className="containeryoutubeCards">
+                    <div className="containeryoutubeCardsTitle">
+                       <h1>BLOGS DE ODONTOLOGÍA</h1>    
+                    </div >
                 
-                {DataCapacitacion.map(function(dato,index){
-                    return (
-                
-                    <div className="capacitacionCards" key={index}> 
-                    <Link to={`insumos/${dato.id}`}> 
-                
-                  <div className= "imgCurso">
-                      <img src={dato.imagen} />
-                  </div>
-                  <div className="dataCurso">
+                        {DataChannel.map(function(dato,index){
+                            return (
                         
-                        <h4>{dato.ramaOdontologia}</h4>
-                        <h2>Nombre del Curso: {dato.name}</h2>
-                        <h4>Dictante/s: {dato.dictantes}</h4>
-                        <h4>Modalidad del curso: {dato.modalidad}</h4>
+                        <div className="youtubeCards" key={index}> 
                         
-                        <h4>Carga Horaria: {dato.cargaHoraria}</h4>
-                        <h4>Lugar de realizacion: {dato.lugar}</h4>
-                        <h4>Precio: {dato.precio}</h4>   
-                  </div> 
-                   </Link>     
-               </div> ) 
-              
-               }
-              
+                        
+                        <div className= "imgCurso">
+                                            
+                            <a href= {dato.url}target="_blank">
+                                <img src={dato.logo} />
+                            </a>  
+                            <div className="datosYoutubeCh">
+                                <h4>{dato.name}</h4>    
+                                <p><b>Categoria:</b> {dato.ctgy}</p> 
+                                <p><b>Idioma:</b> {dato.idioma}</p> 
+                                <p><b>Detalle:</b> {dato.detail}</p> 
+                            </div>
+                        </div>                              
+                                                    
+                        
+                        
+                    </div> ) 
+                    
+                    }
+                    
                  )}
-                 <MediaCard/>
+                 
+                 </div>
+                 <aside className="publicidades">
+                     hola
+                 </aside>
                  </div>
             </div>
         )
-}
+}                          
+                        
+                  
 
-export default InsumosOd
+export default BlogsOdontologia

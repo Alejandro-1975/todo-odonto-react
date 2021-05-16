@@ -4,7 +4,7 @@ import MediaCard from './CardsCapacitacion'
 import DataCapacitacion from './jsonDataCapacitacion'
 import {Link} from 'react-router-dom'
  
-function Capacitacion (){
+function RecursosHumanos (){
         return(
             <div>
                 <Navbar />  
@@ -17,7 +17,7 @@ function Capacitacion (){
                  </div>
                 <div>
 
-                    <h1>Capacitacion de Post-Grado</h1>
+                    <h1>Recursos Humanos en Odontología</h1>
                 </div >
                 <div className="containerCards">
                 
@@ -25,7 +25,7 @@ function Capacitacion (){
                     return (
                 
                     <div className="capacitacionCards" key={index}> 
-                    <Link to={`capacitaciones/${dato.id}`}> 
+                    <Link to={`insumos/${dato.id}`}> 
                 
                   <div className= "imgCurso">
                       <img src={dato.imagen} />
@@ -33,14 +33,13 @@ function Capacitacion (){
                   <div className="dataCurso">
                         
                         <h4>{dato.ramaOdontologia}</h4>
-                        <p>Nombre del Curso:</p> <h2>{dato.name}</h2>
+                        <h2>Nombre del Curso: {dato.name}</h2>
+                        <h4>Dictante/s: {dato.dictantes}</h4>
+                        <h4>Modalidad del curso: {dato.modalidad}</h4>
                         
-                         <p>Dictante/s: {dato.dictantes}</p> 
-                        <p>Modalidad del curso: {dato.modalidad}</p>
-                        
-                        <p>Carga Horaria: {dato.cargaHoraria}</p>
-                        <p>Lugar de realizacion: {dato.lugar}</p>
-                        <p>Precio: {dato.precio}</p>   
+                        <h4>Carga Horaria: {dato.cargaHoraria}</h4>
+                        <h4>Lugar de realizacion: {dato.lugar}</h4>
+                        <h4>Precio: {dato.precio}</h4>   
                   </div> 
                    </Link>     
                </div> ) 
@@ -48,10 +47,10 @@ function Capacitacion (){
                }
               
                  )}
-                 
+                 <MediaCard/>
                  </div>
             </div>
         )
 }
 
-export default Capacitacion
+export default RecursosHumanos

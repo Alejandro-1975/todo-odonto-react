@@ -9,10 +9,7 @@ function InsumosOd (){
             <div>
                 <Navbar />  
                
-                <div className="head">
-                     EQUIPAMIENTOS
-                            
-                </div>
+                
                 <div className="banner">   
             
               

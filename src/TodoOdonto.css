@@ -1,9 +1,32 @@
+
 .firstNav {
-    background: #00263A;    
+    
+    
+    background: #00263A;  
+    height:40px;
     color: white;
     font-weight: bold;
     font-size: 16px;
+   text-align: right;
 }
+.firstNav a {
+    
+  
+    background: #073650; 
+    padding: 6px;    
+    border-radius: 8px;
+    border: 1px solid white;
+    margin: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+
+
+
 
 .head { 
     overflow: hidden;
@@ -15,9 +38,15 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
   top: 0;
-   
-
+  display: flex;
+  flex-wrap: wrap;
 }
+   
+.head img{
+    height: auto;
+    width: 30%;
+}
+
 .banner  {
     margin:0px;
     width: 100%;
@@ -34,7 +63,7 @@
     }
 .banner .capa-gradiente {
  width: 100%;
- height: 32.8%;
+ height: 300px;
  position: absolute;
  background: -webkit-linear-gradient(left,black,#00263A);
  opacity: 0.5;
@@ -118,7 +147,8 @@
        
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid gray
+    border: 1px solid gray;
+    justify-content: space-evenly;
     
 }
 .linksEmpresas h2{
@@ -128,20 +158,30 @@
     width:100%;
 }
 .linkEmpr {
-    margin:8px 5px;
+    margin:3px 3px;
     padding: 2px;
     background-color: white;
     display: block;
+    width:20%;
     flex-wrap: wrap;
-  border-radius: 10px;
+    border-radius: 10px;
 }
+.linkEmpr img{
+    margin:auto;
+    padding:auto;
+    align-items: center;
+    width:100%;
+    height: auto;
+    
+ }
 .linkEmpr h6{
    margin:2px;
    color:#00263A;
     visibility: hidden;
    text-align: center;
-   transition: all .5s;
+   transition: all .1s;
 }
+
 .linkEmpr:hover h6{
     visibility: visible;
     text-align: center;
@@ -180,7 +220,7 @@
 .entidadesOdontologicas h1 {
     display: flex;
     justify-content: left;
-    margin: 12px auto;
+    margin: 6px;
     padding: 12 px;
     width: 100%;
     
@@ -190,6 +230,7 @@
     display: flex;
     justify-content: left;
     margin: 12px auto;
+    flex-wrap: wrap;
     width: 100%;
     
 }
@@ -199,8 +240,8 @@
     text-align: center;
     flex-direction: row;
     align-items: center;
-    margin: 12px auto;
-    width: 100%;
+    margin: 6px;
+    width: 10%;
     
 }
 .entidad h6{
@@ -216,8 +257,9 @@
      flex-direction: column;
      margin: 0px;
   }
-
-    
+  .entidad img{
+    width: 80%;
+  }  
 
 
     
@@ -339,8 +381,7 @@
 .containeryoutubeCardsTitle {    
     
     display: inline-block;
-    color: white;
-    font-size: 28px;
+    color: white;   
     width:100%;
     margin:20px;
    
@@ -367,5 +408,338 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 } 
+.datosCardInsumos h4{
+    font-size: 22px;
+    margin-left:6px;
+}
+.insumosCards {
+    display: flex;
+    margin: 10px;
+    width:40%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.insumosCards:hover {
+    transform: translateY(-15px);
+    box-shadow: 12px 12px 20px rgba(0,0,0,0.3);
+}
+.insumosCards a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+
+}
+.datosCardInsumos img {
+    width: 300px;
+}
+
+.cardInsumosTitle {
+    font-size: 20px;
+}
 
 
+@media screen and (max-width: 768px) {
+    
+    .firstNav {       
+        height:40px;
+        font-size: 12px;      
+    }
+    .firstNav a {     
+            
+        padding: 3px;    
+        border-radius: 8px;
+        border: 1px solid white;
+        margin: 3px;
+        font-size: 12px;
+        
+    }
+    .head p { 
+        font-size: 14px;
+        margin: 10px;
+       }
+    .firstNav img {
+       
+        height: 40%;
+        
+    }
+    .div-tarjetas-aside {
+        margin-top: 0px;
+        padding: top 3px;
+                
+    }
+    .tarjets {
+        width: 72%;
+        
+    }
+    .asides {
+        width: 25%;
+       
+    }
+    
+    .tarjet-list {
+        border-radius: 20px;    
+        box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
+        width:40%;
+        margin: 10px;
+        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+            
+    }        
+    .tarjet-list h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }    
+          
+    .tarjet-list:hover {
+        transform: translateY(-15px);
+        box-shadow: 12px 12px 20px rgba(0,0,0,0.9);
+        
+    }
+   
+  
+    .tarjet-list img {
+        width: 100%;
+    
+    }
+    .tarjet-list p {
+        font-size: 12px;
+    
+    }
+    .linksEmpresas h2{
+       font-size: 18px;
+        margin: 3px;
+    }
+    .linkEmpr {
+        margin:1px;
+        padding: 2px;
+        background-color: white;
+        display: block;
+        width:20%;
+        flex-wrap: wrap;
+        border-radius: 10px;
+    }
+    .banner  {
+        height: 200px;      
+        background-size: 160%;
+       }
+       .banner .capa-gradiente {       
+        height: 200px;
+       }
+       
+       .entidadesOdontologicas h1{
+           font-size: 20px;
+       }
+       .entidad img{
+        width:100%;
+    }
+    .entidad h6{
+       font-weight: normal;
+    }
+    .youtubeCards {
+        display: flex;
+        margin: 6px;
+        width:100%;   
+    } 
+       
+    .datosYoutubeCh p{
+        display: inline-block;
+        width: auto;
+        margin: 6px 10px;
+        text-align: justify;
+        font-size: 11px;
+    }
+    .datosYoutubeCh h4{
+        margin: 6px 0px;
+        margin-left: 6px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .containeryoutubeCards{    
+        width: 70%;      
+        margin: 8px;
+      
+    }
+    .containeryoutubeCardsTitle {    
+        display: inline-block;
+        color: white;   
+        width:100%;
+        margin:6px;
+       
+    }
+    .containeryoutubeCardsTitle h1{    
+          
+        color: white;
+        font-size: 20px;
+       width: 100%;
+        
+    }
+    .cards-aside-ytch {
+        margin-top:0px;
+        padding-top: 8px;
+    }
+    .publicidades {
+        width:100%;
+    }
+    
+    
+    
+    
+
+}
+
+@media screen and (max-width: 425px) {
+   
+    .firstNav {       
+        height:40px;
+        font-size: 12px;      
+    }
+    .firstNav a {     
+            
+        padding: 1px 3px;    
+        border-radius: 6px;
+        border: 1px solid white;
+        margin: 3px;
+        font-size: 11px;
+        
+    }
+    .head img {
+      width:40%;
+        
+    }
+    .head p { 
+        font-size: 12px;
+        margin: 10px;
+       }
+    
+    
+    .div-tarjetas-aside {
+        margin-top: 0px;
+        padding: top 3px;
+                
+    }
+    .tarjets {
+        width: 100%;
+        
+    }
+    .asides {
+        width: 100%;
+       
+    }
+    
+    .tarjet-list {
+        border-radius: 15px;    
+        box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
+        width:42%;
+        margin: 10px;
+        padding:2px;
+        display: flex;
+        flex-wrap: wrap;
+            
+    }        
+    .tarjet-list h1 {
+        font-size: 14px;
+        font-weight: bold;
+    }    
+          
+    .tarjet-list:hover {
+        transform: translateY(-15px);
+        box-shadow: 12px 12px 20px rgba(0,0,0,0.9);
+        
+    }
+   
+  
+    .tarjet-list img {
+        width: 80%;
+    
+    }
+    .tarjet-list p {
+        font-size: 12px;
+    
+    }
+    .linksEmpresas h2{
+       font-size: 15px;
+        margin: 3px;
+    }
+    .linkEmpr {
+        margin:1px;
+        padding: 2px;
+        background-color: white;
+        display: block;
+        width:10%;
+        flex-wrap: wrap;
+        border-radius: 8px;
+    }
+    .banner  {
+        height: 100px;      
+        background-size: 180%;
+       }
+       .banner .capa-gradiente {       
+        height: 100px;
+       }
+       
+       .entidadesOdontologicas h1{
+           font-size:15px;
+       }
+       .entidad img{
+        width:100%;
+    }
+    .entidad h6{
+       font-weight: normal;
+    }
+    .entidad {
+        
+        margin: 3px;
+        width: 15%;
+    }
+
+    .youtubeCards {
+        display: flex;
+        margin: 6px;
+        width:100%;   
+    } 
+       
+    .datosYoutubeCh p{
+        display: inline-block;
+        width: auto;
+        margin: 6px ;
+        text-align: justify;
+        font-size: 11px;
+    }
+    .datosYoutubeCh h4{
+        margin: 6px 0px;
+        margin-left: 6px;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .containeryoutubeCards{    
+        width: 90%;      
+        margin: 8px;
+      
+    }
+    .containeryoutubeCardsTitle {    
+        display: inline-block;
+        color: white;   
+        width:100%;
+        margin:6px;
+       
+    }
+    .containeryoutubeCardsTitle h1{    
+          
+        color: white;
+        font-size: 14px;
+       width: 100%;
+        
+    }
+    .cards-aside-ytch {
+        margin-top:0px;
+        padding-top: 8px;
+    }
+    
+    
+
+}

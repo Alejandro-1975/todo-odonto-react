@@ -13,7 +13,7 @@ export default  [
       "id" : "2", 
       "ctgy" : "insumos",    
       "name":"INSUMOS ODONTOLOGICOS",
-           "detalle" : "Ingrese aquí y encontrará todo lo que necesite en insumos de odontología",
+           "detalle" : "Encuentre con facilidad el material que desea en todas las casas dentales adherida",
             "imagen" : "/images/insumos-odontologicos.jpg",
             
       },
@@ -22,7 +22,7 @@ export default  [
        {   "id" : "3",
        "ctgy" : "equipamiento",  
            "name":"EQUIPAMIENTO ODONTOLOGICO",
-           "detalle" : "Ingrese aquí y encontrará todo tipo de EQUIPAMIENTO odontológico",
+           "detalle" : "Acá podrá encontrar todo lo que necesita para equipar su consultorio, desde lo más básico hasta la tecnología mas moderna (CAD-CAM/LASER)",
            "imagen" : "/images/equipamiento-odontologico.jpeg"
             
         },
@@ -36,7 +36,7 @@ export default  [
        { "id" : "5",
        "ctgy" : "instrumental",  
           "name":"INSTRUMENTAL ODONTOLOGICO",
-         "detalle" : "Ingrese aquí y encontrará todo lo que necesite en INSTRUMENTAL para las diferentes especialidades",
+         "detalle" : "Busca instrumental para su consultorio, acá los encontrará.  Instrumental para las diferentes especialidades",
           "imagen" : "/images/Instrumental-odontológico.jpg"
             
        },
@@ -49,7 +49,7 @@ export default  [
         },
        {  "id" : "7",
        "ctgy" : "rh",  
-          "name": "RECURSOS HUMANOS EN ODONTOLOGIA",
+          "name": "ASESORAMIENTO Y RECURSOS HUMANOS PARA ODONTOLOGIA",
           "detalle" : "Diferentes tipos de profesionales NO ODONTOLOGOS pero que estan ligados a la Odontología",
            "imagen" : "/images/recursos-humanos.jpg"
             
@@ -64,14 +64,14 @@ export default  [
         { "id" : "9",
         "ctgy" : "youtube",  
            "name":"CANALES DE YOUTUBE RELACIONADOS CON LA ODONTOLOGIA",
-           "detalle" : "Canales en YOUTUBE de empresas de productos odontologícos y de profesionales reconocidos",
+           "detalle" : "Acceda a los canales de YouTube odontológicos que le puedan interesar ",
            "imagen" : "/images/youtube.jpg"
             
         },
         { "id" : "10",
         "ctgy" : "blogs",  
            "name":"BLOGS ODONTOLOGICOS",
-           "detalle" : "Blogs de odontólogos para odontólogos",
+           "detalle" : "Acceda para encontrar los BLOGS que le pueden interesar en odontología ",
            "imagen" : "/images/blog-odontologia.jpg"
             
         },

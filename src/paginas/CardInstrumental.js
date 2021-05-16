@@ -9,10 +9,7 @@ function InsumosOd (){
             <div>
                 <Navbar />  
                
-                <div className="head">
-                     INSTRUMENTAL
-                            
-                </div>
+               
                 <div className="banner">   
             
               

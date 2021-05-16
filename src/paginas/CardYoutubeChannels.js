@@ -10,10 +10,7 @@ function YoutubeChannels (){
             <div>
                 <Navbar />  
                
-                <div className="head">
-                <h1>Canales de Youtube relacionados a la ODONTOLOGÍA</h1>
-                            
-                </div>
+                
                 <div className="banner">   
             
               

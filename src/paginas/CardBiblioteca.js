@@ -1,17 +1,16 @@
+
 import Navbar from './Navbar.js'
-
-import CategoriaInsumos from './jsonInsumosCategorias'
-
+import {Container} from '@material-ui/core'
 
 import DataChannel from './jsonYoutubeChannels.js'
 import {Link} from 'react-router-dom'
  
-function InsumosOd (){
+function Biblioteca (){
         return(
             <div>
                 <Navbar />  
                
-                
+               
                 <div className="banner">   
             
               
@@ -20,21 +19,27 @@ function InsumosOd (){
                 <div className="cards-aside-ytch">
                  <div className="containeryoutubeCards">
                     <div className="containeryoutubeCardsTitle">
-                       <h1>Insumos Odontológicos</h1>    
+                       <h1>LIBROS, REVISTAS CIENTIFICAS, ACCESO A BIBLIOTECAS</h1>    
                     </div >
                 
-                        {CategoriaInsumos.map(function(dato,index){
+                        {DataChannel.map(function(dato,index){
                             return (
                         
-                        <div className="insumosCards" key={index}>                                                
+                        <div className="youtubeCards" key={index}> 
                         
-                            <div className="datosCardInsumos">             
-                                 <img src={dato.imagen} />
-                            </div>   
-                           
-                            <div className="cardInsumosTitle">
-                                <h4>{dato.name}</h4>                                    
-                            </div>                              
+                        
+                        <div className= "imgCurso">
+                                            
+                            <a href= {dato.url}target="_blank">
+                                <img src={dato.logo} />
+                            </a>  
+                            <div className="datosYoutubeCh">
+                                <h4>{dato.name}</h4>    
+                                <p><b>Categoria:</b> {dato.ctgy}</p> 
+                                <p><b>Idioma:</b> {dato.idioma}</p> 
+                                <p><b>Detalle:</b> {dato.detail}</p> 
+                            </div>
+                        </div>                              
                                                     
                         
                         
@@ -55,7 +60,4 @@ function InsumosOd (){
                         
                   
 
-export default InsumosOd
- 
-
-       
+export default Biblioteca
