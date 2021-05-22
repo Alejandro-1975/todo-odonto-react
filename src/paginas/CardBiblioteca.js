@@ -1,7 +1,7 @@
 
 import Navbar from './Navbar.js'
 import {Container} from '@material-ui/core'
-
+import Footer from './Footer'
 import DataChannel from './jsonYoutubeChannels.js'
 import {Link} from 'react-router-dom'
  
@@ -28,7 +28,7 @@ function Biblioteca (){
                         <div className="youtubeCards" key={index}> 
                         
                         
-                        <div className= "imgCurso">
+                        <div className= "imgYoutube">
                                             
                             <a href= {dato.url}target="_blank">
                                 <img src={dato.logo} />
@@ -54,6 +54,7 @@ function Biblioteca (){
                      hola
                  </aside>
                  </div>
+                 <Footer />
             </div>
         )
 }                          

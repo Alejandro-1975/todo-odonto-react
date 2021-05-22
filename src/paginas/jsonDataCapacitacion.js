@@ -6,10 +6,10 @@ export default  [
       "id": "1",
       "ramaOdontologia": "OPERATORIA DENTAL - ESTÉTICA DENTAL", //DEBE VENIR DE UN LISTADO DE ramas de la odontologia de las cuales se pueden elegir 2 o 3
         "modalidad": "TEORICO", // DEBE VENIR DE UN LISTADO DE MODALIDADES
-        "name":"Estetica de  la Sonrisa",
+        "name":"Estetica de  la Sonrisa en pacientes con fluorosis",
         "dictantes": "Pedro Herrera-Marcos Sandunga",
         "detalle" : "Ingrese aquí y encontrará todo lo que necesite en insumos de odontología",
-         "imagen" : "http://localhost:3000/images/insumos-odontologicos.jpg",
+         "imagen" : "http://localhost:3000/images/curso-endodoncia.jpg",
          "fechaRealizacion": "17/02/2022", //una vez pasada esa fecha debe caducar la muestra del mismo, salvo que el usuario ingrese fecha nueva previo aviso del mismo.
          "cargaHoraria": "8 hs",
          "lugar": "Circulo Odontologico Santafesino",

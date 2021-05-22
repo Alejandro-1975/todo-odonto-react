@@ -7,6 +7,9 @@ import Navbar from './Navbar.js'
 import jsonEntidadesOd from './jsonEntidadesOd.js'
 import jsonLinksEmpresas from './jsonLinksEmpresas'
 import SearchAppBar from './mUiAppBar'
+import Footer from './Footer'
+import Recomendados from './jsonRecomendados'
+
 
 function Home
 () {
@@ -47,6 +50,7 @@ function Home
          
               <aside className="ofertas">
                <h1>¡¡OFERTAS!!</h1>
+               
 
 
               </aside>
@@ -77,8 +81,20 @@ function Home
         asd
       </div>
       <div className="recomendaciones">
-        asdg
-      </div>
+       
+        <h1>Los Recomendados</h1>
+        <div className="div-recomendacion">
+      {Recomendados.map(function(dato,index){
+        return <div className="recomendacion" key={index}> 
+                 
+                 <h2>{dato.title}</h2>
+                 <img src={dato.imagen} />
+                                             
+           
+              </div> }                       
+          )}
+          </div>
+          </div>
       <div className="entidadesOdontologicas">
             
           <h1>Entidades Odontologicas de la Republica Argentina</h1>
@@ -94,9 +110,7 @@ function Home
               )}
           </div>
       </div>
-      <div className="footer">
-        asd
-      </div>
+      <Footer />
     </div>
   )
 }

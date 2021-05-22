@@ -1,15 +1,17 @@
 
-.firstNav {
+.firstNav z {
     
     
     background: #00263A;  
-    height:40px;
+   
     color: white;
     font-weight: bold;
     font-size: 16px;
    text-align: right;
+   margin:12 px;
+   display: block;
 }
-.firstNav a {
+.firstNav  a {
     
   
     background: #073650; 
@@ -20,8 +22,18 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    
+    font-size: 16px;  
+}   
+.firstNav > li {
+    float:left;
+}
+.firstNav li ul{
+    display:none;
+    position:absolute;
+    min-width: 140px;
+}
+.firstNav li:hover > ul {
+    display: block;
 }
 
 
@@ -80,6 +92,18 @@
     flex-wrap: wrap;
     
 }
+.tituloPagina {
+    background-color:#00263A ; 
+    margin: 0px;  
+    padding: 0px;
+}
+.tituloPagina h1{
+    color: white;
+   text-align: initial;
+    margin: 0px;
+    margin-left: 12px;
+}
+  
 .tarjets {
     background-color:#00263A ;
     width: 72%;
@@ -137,6 +161,7 @@
 .ofertas {
     height: 40px;
     border: 1px solid gray;
+    overflow: hidden;
 }
 .publicidades {
     
@@ -199,13 +224,41 @@
     border: 1px solid gray
 }
 .recomendaciones {
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     margin: 12px auto;
     width: 100%;
-    height: 100px;
+    
     border: 1px solid gray
 }
+.recomendaciones h1 {
+    font-size:32px;
+}
+.recomendacion img{
+    width: 100%;
+    margin:2 px;
+    padding:12 px;
+}
+
+.recomendacion h2 {
+   margin: 12px 12px;
+   margin-top: 15px;
+    font-size: 26px;
+    color:white ;
+    
+}
+.div-recomendacion{
+    display: flex;
+    width: 100%;
+    margin:12 px ;
+    padding: 12 px;
+}
+.recomendacion {
+    margin:12 px;
+    
+    background-color:#00263A ;
+}
+
 .entidadesOdontologicas {
     display: flex;
     flex-direction: column;
@@ -265,23 +318,62 @@
     
 
 .footer {
-
-    height: 100px;
+    display: inline-block;
     background: #00263A;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 200px;
+}
+.footer-item {
+    display: flex;
+    background: #00263A;
+    align-items: right;
+    flex-wrap: wrap;
+    height: 100px;
+       
+}
+.footer-item img{
+height:35%;
+    width: 15%;
+   
+   
+}
+.footer-item p{
+    background: #00263A;
+    color: white;
+    font-size: 16px;
+}
+.bottomNav {
+    background: #00263A;
+    color: white;
+    font-size: 16px;
+
+    
+}
+.bottomNav a{
+    background: #073650; 
+    padding: 6px;    
+    border-radius: 8px;
+    border: 1px solid white;
+    margin: 6px;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 16px;
 }
 .containerCards {
+    width: 70%;
     display: flex;
-    margin: 12px;
+    margin: 10px;
     flex-wrap: wrap;
 }
 .capacitacionCards {
-    display: flex;
-    margin: 20px;
-    width:40%;
-    border: 1px solid gray;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    width:100%;    
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
@@ -292,19 +384,29 @@
     transform: translateY(-15px);
     box-shadow: 12px 12px 20px rgba(0,0,0,0.3);
 }
-.capacitacionCards a {
+.containerCards a {
+    display:block;
     text-decoration: none;
     color: black;
     margin: 10px;
+    width:100%;
 
 }
-.imgCurso img{
-    width: 300px;}
+.imgCurso {
+    width:15%;
+   
+}
+
+.imgCurso img {
+    width: 100%;
+    
+}
 
 
+       
 .dataCurso h2{
-   margin-left:12px;
-  
+   margin-left: 6px;
+  font-size:20px;
     text-align: left;
    
 }
@@ -314,16 +416,16 @@
     text-align: left;
     color: gray;
 }
-.dataCurso h4.dato {
-    text-decoration: none;
-    text-align: left;
-    color: gray;
-    font-weight: lighter;
-}
-.dataCurso p { 
-    text-decoration: none;  
- }
 
+
+.dataCurso p { 
+    margin:6px;
+    margin-left: 10px;
+    text-decoration: none;  
+    flex-direction: row;
+    font-size : 14px;
+ }
+ 
 
 
  
@@ -430,15 +532,18 @@
 .insumosCards a {
     text-decoration: none;
     color: black;
-    margin: 10px;
+    margin-left: 6px;
 
 }
 .datosCardInsumos img {
-    width: 300px;
+    width: 180px;
+    margin: 0px;
 }
 
 .cardInsumosTitle {
     font-size: 20px;
+    margin-left: 10px;
+  
 }
 
 

@@ -16,6 +16,10 @@ import CardRecursosHumanos from './paginas/CardRecursosHumanos'
 import CardClasificados from './paginas/CardClasificados'
 import CardSoftware from './paginas/CardSoftware'
 import CardBiblioteca from './paginas/CardBiblioteca'
+import CardInsumosSubCat from './paginas/CardInsumosSubCat'
+import Contacto from './paginas/Contacto.js'
+import Nosotros from './paginas/Nosotros.js'
+
 
 
 function TodoOdonto() {
@@ -23,6 +27,12 @@ function TodoOdonto() {
   return (
     <Router>
         <Switch>
+        <Route path="/nosotros">
+              <Nosotros />
+          </Route>   
+        <Route path="/contacto">
+              <Contacto />
+          </Route>   
           <Route path="/libreria">
               <CardBiblioteca />
           </Route>   
@@ -40,6 +50,9 @@ function TodoOdonto() {
           </Route>
           <Route path="/equipamiento">
               <CardEquipamientos />
+          </Route>
+          <Route path="/insumos/">
+              <CardInsumos />
           </Route>
           <Route path="/insumos">
               <CardInsumos />

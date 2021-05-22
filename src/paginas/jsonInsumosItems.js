@@ -1,19 +1,31 @@
 export default  [ 
     
     
-    {   "id": "1",
-        "name": "Descartables y Bioseguridad",
-        "ctgy": "descart-bioseg",
+    {   "ctgy": "descart-bioseg",
+         "id": "1",
+        "name": "Guantes Latex",
+        "presentacion": "caja por 100 unidades",
+        "stock": "200",
+        "price" : "$1800",
+        "oferta": "1100",
         "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+        "marca" : "Dental Glove",
+        "detail" : "Caja de guantes descartables de latex, con 100 unidades por caja. Tamaños disponibles XS, S,M,L,XL", 
          
    },
 
-    {   "id": "2",
-        "name": "Operatoria Dental",
-        "ctgy": "op-dental",
-        "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
-         
-   },
+   {   "ctgy": "descart-bioseg",
+       "id": "2",
+       "name": "Guantes Nitrilo",
+       "presentacion": "caja por 200 unidades - COLOR NEGRO",
+       "stock": "100",
+       "price" : "$3000",
+       "oferta": "2500",
+       "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+       "marca" : "GloveMan",
+       "detail" : "Caja de guantes descartables de Nitrilo, con 200 unidades por caja. Tamaños disponibles XS, S,M,L,XL", 
+   
+},
     {   "id": "3",
         "name": "Endodoncia",
         "ctgy": "endo",
@@ -75,15 +87,9 @@ export default  [
         "imagen" : "http://localhost:3000/images/estetica-facial.jpg",
          
    },
-   {   "id": "14",
-        "name": "Tecnología DIGITAL Y CAD-CAM",
-        "ctgy": "digital",
-        "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
-         
-   },
-   {   "id": "15",
-        "name": "Laser Odontológico",
-        "ctgy": "laser",
+   {   "id": "13",
+        "name": "Cirugía Maxilo Facial",
+        "ctgy": "maxilo-facial",
         "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
          
    },

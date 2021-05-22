@@ -3,6 +3,7 @@ import {Container} from '@material-ui/core'
 import MediaCard from './CardsCapacitacion'
 import DataCapacitacion from './jsonDataCapacitacion'
 import {Link} from 'react-router-dom'
+import Footer from './Footer'
  
 function InsumosOd (){
         return(
@@ -47,8 +48,9 @@ function InsumosOd (){
                }
               
                  )}
-                 <MediaCard/>
+                 
                  </div>
+                 <Footer />
             </div>
         )
 }

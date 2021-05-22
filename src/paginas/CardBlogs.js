@@ -1,7 +1,6 @@
 
-import Navbar from './Navbar.js'
-import {Container} from '@material-ui/core'
-
+import Navbar from './Navbar.js'  
+import Footer from './Footer'
 import DataChannel from './jsonYoutubeChannels.js'
 
  
@@ -28,7 +27,7 @@ function BlogsOdontologia (){
                         <div className="youtubeCards" key={index}> 
                         
                         
-                        <div className= "imgCurso">
+                        <div className= "imgYoutube">
                                             
                             <a href= {dato.url}target="_blank">
                                 <img src={dato.logo} />
@@ -54,6 +53,7 @@ function BlogsOdontologia (){
                      hola
                  </aside>
                  </div>
+                 <Footer />
             </div>
         )
 }                          
