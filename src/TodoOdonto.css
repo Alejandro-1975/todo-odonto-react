@@ -1,5 +1,5 @@
 
-.firstNav z {
+.firstNav  {
     
     
     background: #00263A;  
@@ -49,6 +49,7 @@
     margin:0px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    z-index: 10;
   top: 0;
   display: flex;
   flex-wrap: wrap;
@@ -57,13 +58,14 @@
 .head img{
     height: auto;
     width: 30%;
+    z-index: 10 ;
 }
 
 .banner  {
     margin:0px;
     width: 100%;
     height: 300px;
-   
+    z-index: 10 ;
     background-image: url(http://localhost:3000/images/consultorio.jpg);
     background-size: 120%;
     animation: movimiento 30s infinite linear alternate;
@@ -75,10 +77,12 @@
     }
 .banner .capa-gradiente {
  width: 100%;
+ z-index: 11 ;
  height: 300px;
  position: absolute;
  background: -webkit-linear-gradient(left,black,#00263A);
  opacity: 0.5;
+ z-index:9;
 }
 
    

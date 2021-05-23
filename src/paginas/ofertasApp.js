@@ -1,5 +1,9 @@
-import {Slideshow, Slide, TextoSlide} from './../componentes/Slidesshow';
+import {Slideshow, Slide, TextoSlide} from '../componentes/Slideshow';
 import styled from 'styled-components';
+
+
+
+
 
 const ofertasApp = () => {
     return (

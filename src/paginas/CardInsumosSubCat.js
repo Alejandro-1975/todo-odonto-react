@@ -1,9 +1,9 @@
 import Navbar from './Navbar.js'
 
-import SubCategoriaInsumos from './jsonInsumosSubCategory'
+import jsonInsumosSubCategory from './jsonInsumosSubCategory'
 
 
-import DataChannel from './jsonYoutubeChannels.js'
+
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
  
@@ -15,7 +15,7 @@ function InsumosOdCat (){
                 
                 <div className="banner">   
             
-              
+             
             
                  </div>
                 <div className="cards-aside-ytch">
@@ -24,7 +24,7 @@ function InsumosOdCat (){
                        <h1>Insumos Odontológicos</h1>    
                     </div >
                 
-                        {SubCategoriaInsumos.map(function(dato,index){
+                        {jsonInsumosSubCategory.map(function(dato,index){
                             return (
                         
                         <div className="insumosCards" key={index}>                                                

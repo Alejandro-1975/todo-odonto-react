@@ -6,6 +6,7 @@ import Home from './paginas/Home.js'
 import CardCapacitacion from './paginas/CardCapacitacion'
 import NotFound from './paginas/404'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {useEffect} from 'react'
 
 import CardYoutubeChannels from './paginas/CardYoutubeChannels'
 import CardInstrumental from './paginas/CardInstrumental'
@@ -19,18 +20,25 @@ import CardBiblioteca from './paginas/CardBiblioteca'
 import CardInsumosSubCat from './paginas/CardInsumosSubCat'
 import Contacto from './paginas/Contacto.js'
 import Nosotros from './paginas/Nosotros.js'
-
+//import ofertasApp from './paginas/ofertasApp'
+import detalleCursos from './paginas/DetalleCapacitacion'
 
 
 function TodoOdonto() {
-  
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  })
   return (
     <Router>
         <Switch>
-        <Route path="/nosotros">
+          
+            <Route path="/insumos-subcat">
+              <CardInsumosSubCat />
+          </Route>  
+           <Route path="/nosotros">
               <Nosotros />
           </Route>   
-        <Route path="/contacto">
+          <Route path="/contacto">
               <Contacto />
           </Route>   
           <Route path="/libreria">

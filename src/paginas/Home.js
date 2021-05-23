@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import Navbar from './Navbar.js'
 import jsonEntidadesOd from './jsonEntidadesOd.js'
 import jsonLinksEmpresas from './jsonLinksEmpresas'
-import SearchAppBar from './mUiAppBar'
+import SearchAppBar from '../componentes/mUiAppBar'
 import Footer from './Footer'
 import Recomendados from './jsonRecomendados'
 
@@ -16,8 +16,7 @@ function Home
   
   return (
     <div className="todoOdonto">
-      <SearchAppBar/>
-           
+      <SearchAppBar/>           
       <div className="head">
         
         <Navbar />
@@ -50,7 +49,7 @@ function Home
          
               <aside className="ofertas">
                <h1>¡¡OFERTAS!!</h1>
-               
+           
 
 
               </aside>

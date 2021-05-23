@@ -1,10 +1,10 @@
 //   https://www.youtube.com/watch?v=q00ldTrywLU  38:07
 
-import { SportsRugbySharp } from '@material-ui/icons';
+
 import React,{useRef,useEffect,useCallback} from 'react';
 import styled from 'styled-components';
-import {ReactComponent as FlechaIzquierda} from './image/icons/arrow_back_.svg';
-import {ReactComponent as FlechaDerecha} from './image/icons/arrow_forward_.svg';
+import {ReactComponent as FlechaIzquierda} from '/icons/arrow_back_.svg';
+import {ReactComponent as FlechaDerecha} from '/icons/arrow_forward_.svg';
 
 
 

@@ -1,9 +1,8 @@
 import Navbar from './Navbar.js'
 
 import CategoriaInsumos from './jsonInsumosCategorias'
-import CardInsumosSubCat from './jsonInsumosSubCategory'
 
-import DataChannel from './jsonYoutubeChannels.js'
+
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
  
