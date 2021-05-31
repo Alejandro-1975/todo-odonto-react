@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import Navbar from './Navbar';
+
 
 function SearchItems() {
   var [search, setSearch] = useState('')
@@ -27,7 +27,7 @@ function SearchItems() {
 
   return (
     <>
-      <Navbar />
+      
 
       <div className="App-navigation">
         <p>Mostrando resultados de busqueda para {search}</p>
@@ -42,7 +42,7 @@ function SearchItems() {
         </div>
       </div>
 
-      <ItemsList />
+     
     </>
   );
 }

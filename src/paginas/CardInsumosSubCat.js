@@ -45,6 +45,7 @@ function InsumosOdCat (){
                     
                  )}
                  
+                 
                  </div>
                  <aside className="publicidades">
                      hola

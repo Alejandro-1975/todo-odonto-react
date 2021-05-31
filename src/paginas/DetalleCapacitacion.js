@@ -1,7 +1,7 @@
 // import jsonDataCapacitacion from './jsonDataCapacitacion'
 // import {Container} from '@material-ui/core'
-// import {useParams,useState,useEffect} from 'react'
-
+// import {useState,useEffect} from 'react'
+// import {useParams} from 'react-router-dom'
 
 // function detalleCursos (){
 //     var {id} = useParams()
@@ -16,7 +16,7 @@
 //             return false
 //         })
 //         setCurso(resultado)
-//     })
+//     },[]);
 
 
 //     return(

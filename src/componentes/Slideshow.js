@@ -1,14 +1,14 @@
-//   https://www.youtube.com/watch?v=q00ldTrywLU  38:07
+//   https://www.youtube.com/watch?v=q00ldTrywLU  a los 16:00 empieza a crear el codigo slideshow
 
 
 import React,{useRef,useEffect,useCallback} from 'react';
 import styled from 'styled-components';
-import {ReactComponent as FlechaIzquierda} from '/icons/arrow_back_.svg';
-import {ReactComponent as FlechaDerecha} from '/icons/arrow_forward_.svg';
+import {ReactComponent as FlechaIzquierda} from '.././icons/arrow_back_.svg';
+import {ReactComponent as FlechaDerecha} from '.././icons/arrow_forward_.svg';
 
+// le da a la pagina principal en css un box-sizing:border-box; ademas en el main le dea un max-width:1080px; y un margin:50px auto u overflow:hideen;
 
-
-const Slideshow = ({children,controles = true, autoplay = true,  velocidad="500", intervalo="5000"
+const Slideshow = ({children,controles = true, autoplay = true,  velocidad="100", intervalo="5000"
   })=> {
   const slideshow = useRef(null);
   const intervaloSlideshow = useRef(null);
@@ -130,7 +130,7 @@ const TextoSlide = styled.div`
   background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0,0,0,.3)'};
   color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
   width:100%;
-  padding:10px 60px;
+  padding:10px 20px;
   text-align: center;
   position: absolute;
   bottom:0;
@@ -161,15 +161,15 @@ const Boton = styled.button`
   text-align: center;
   position: absolute;
   transition: .3s ease all;
-  // &:hover {
-  //   background: rgba(0,0,0,.2);
-  //   path {
-  //     fill: #fff;
-  //   }
-  // }
+  &:hover {
+    background: rgba(0,0,0,.2);
+    path {
+      fill: #fff;
+    }
+  }
 
   path {
-    filter: ${props => props.derecho ? 'drop-shadow(-2px 0px 0px #fff)' : 'drop-shadow(2px 0px 0px #fff)'};
+    filter: ${props => props.derecho ? 'drop-shadow(-4px 0px 0px white)' : 'drop-shadow (4px 0px 0px white)'};
   }
 
   ${props => props.derecho ? 'right:0': 'left:0'}

@@ -5,10 +5,12 @@ import DataCapacitacion from './jsonDataCapacitacion'
 import {Link} from 'react-router-dom'
 import jsonLinksEmpresas from './jsonLinksEmpresas'
 import Footer from './Footer'
+import SelectCategory from '../componentes/SelectCategory'
+import SelectCheckbox from '../componentes/SelectCheckbox'
  
 function Capacitacion (){
         return(
-            <div>
+            <div className="contenedor">
                 <Navbar />  
                
                 
@@ -20,6 +22,9 @@ function Capacitacion (){
                 <div className="tituloPagina">
                     <h1>Capacitacion de Post-Grado</h1>
                 </div >
+                <SelectCategory/>
+                <SelectCheckbox/>
+
                 <div className="div-tarjetas-aside">
                     
                 <div className="containerCards">

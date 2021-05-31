@@ -1,0 +1,93 @@
+.vendedor{
+    background-color: white;
+    width:95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top:80px;
+
+}
+.datosVendedorTitle {
+    color:black;
+    display: block;
+   }
+.datosVendedorTitle h2{
+ color:black;
+ margin:12px;
+}
+.datosVendedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid grey;
+    width:auto;
+    border-radius: 6px;
+    margin:10px;
+    padding:10px;
+}
+.datosVendedorName {
+    align-items: center;
+    color:black;
+    font-size:26px;
+}
+.datosVendedorName h4{
+    color:black;
+    font-size:26px;
+    margin:3px;
+}
+.datosVendedorName h5{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+    text-transform: uppercase
+ }
+ .datosVendedorName h6{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+ .datosVendedorName P{
+    color:red;
+    font-size:14px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+.datosVendedorName img{
+    max-width:50%;
+    margin:0px;
+}
+.datosVendedor button{
+    display: flex;
+    color:white;
+    margin:0px;
+    padding:3px 6px;
+    background-color: rgb(19, 87, 19);
+    border-radius: 6px;
+   
+}
+.datosVendedorLogo iframe{
+    width:100%;
+    width:600px; 
+    height:450;
+    border:0;
+   
+    
+}
+.containerDetailProduct{
+    
+    background-color: white;
+    width:95%;
+    display:block;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top:80px;
+    padding: 20px;
+}

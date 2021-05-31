@@ -1,6 +1,12 @@
 export default  [ 
     
-    
+     { 
+        "id": "0",
+        "name": "Indumentaria Odontológica",
+        "ctgy": "indum",
+        "imagen" : "/images/recursos-humanos.jpg",
+      
+     },
     {   "id": "1",
         "name": "Descartables y Bioseguridad",
         "ctgy": "descart-bioseg",
@@ -33,7 +39,7 @@ export default  [
          
    },
     {   "id": "6",
-        "name": "Ortodoncia y Ortopedia",
+        "name": "Ortodoncia, Ortopedia, Alineadores",
         "ctgy": "ortod",
         "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
          
@@ -45,7 +51,7 @@ export default  [
          
    },
    {   "id": "8",
-        "name": "Odontopediatría",
+        "name": "Odonto Pediatría",
         "ctgy": "odontoped",
         "imagen" : "http://localhost:3000/images/odontopediatria.jpg",
          
@@ -63,6 +69,7 @@ export default  [
         "imagen" : "http://localhost:3000/images/cirugia.jpg",
          
    },
+   
    {   "id": "11",
         "name": "Implantes Dentales y Regeneración de tejidos",
         "ctgy": "implant",
@@ -75,6 +82,13 @@ export default  [
         "imagen" : "http://localhost:3000/images/estetica-facial.jpg",
          
    },
+  
+   {   "id": "13",
+        "name": "Cirugia Maxilo-Facial",
+        "ctgy": "cir-max-fac",
+        "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
+    
+     },
    {   "id": "14",
         "name": "Tecnología DIGITAL Y CAD-CAM",
         "ctgy": "digital",
@@ -84,8 +98,15 @@ export default  [
    {   "id": "15",
         "name": "Laser Odontológico",
         "ctgy": "laser",
-        "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
+        "imagen" : "/images/laser-odonto.jpg",
          
    },
+  
+   {   "id": "16",
+       "name": "Terapias alternativas en Odontología",
+       "ctgy": "alternativas",
+       "imagen" : "/images/terapias-alternativas.jpg",
+    
+},
 
 ]

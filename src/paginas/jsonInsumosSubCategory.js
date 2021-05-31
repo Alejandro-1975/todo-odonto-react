@@ -3,108 +3,83 @@ export default  [
     
     [
          {   "id": "1",
-             "ctgy": "descart-bioseg",
-             "subctgy": "anestesia",
+             "ctgy-id": "1",
              "name": "Todo para Anestesia",        
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+             
          
            },
-           {   "id": "2",
-             "ctgy": "descart-bioseg",
-             "subctgy": "descart-consulta",
+           { "id": "2",
+             "ctgy-id": "1",
              "name": "Vasos, Baberos, Guantes, Suctores, Barbijos, Batas descartables",        
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+            
          
            },
-           {   "id": "3",
-             "ctgy": "descart-bioseg",
-             "subctgy": "desinf-antisep",
-             "name": "Desinfectantes y Antisepticos",        
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
-         
+           { "id": "3",
+             "ctgy-id": "1",
+             "name": "Desinfectantes y Antisepticos",                      
            },
-           {   "id": "4",
-             "ctgy": "descart-bioseg",
-             "subctgy": "esteriliz",
-             "name": "Todo para la esterilizacion (rollos, tiras, etc)",        
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
-         
-           },
-           {   "id": "4",
-               "ctgy": "descart-bioseg",
-               "subctgy": "esteriliz",
-               "name": "Todo para la esterilizacion",        
-               "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
           
+           {   "id": "4",
+               "ctgy-id": "1",         
+               "name": "Todo para la esterilizacion",      
+                     
          },
          {   "id": "5",
-             "ctgy": "descart-bioseg",
-             "subctgy": "aislamiento",
-             "name": "Aislamiento del campo operatorio",        
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
-     
-       },
-     ],
-
-    [
-         {   "id": "2",
-             "ctgy": "op-dental",
-             "subctgy": "resin-comp",
-             "name": "Resinas Compuestas",
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
-         
+             "ctgy-id": "1",
+             "name": "Aislamiento del campo operatorio",     
+            
          },
-         {   "id": "3",
-             "ctgy": "op-dental",
-             "subctgy": "ion-vit",
+    
+         {   "id": "6",
+             "ctgy-id": "2",
+             "name": "Resinas Compuestas",
+             
+         },
+         {   "id": "7",
+             "ctgy-id": "2",
              "name": "Ionómeros Vitreos",
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+          
      
          },
          {   "id": "4",
-             "ctgy": "op-dental",
-             "subctgy": "adhesive",
-             "name": "Adhesivos y Acidos y aplicadores",
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+             "ctgy-id": "op-dental",
+             "name": "Adhesivos y Acidos y aplicadores",     
  
-            },
-           { "id": "5",
-             "ctgy": "op-dental",
-             "subctgy": "adhesive",
+         },
+        
+         {   "id": "5",
+             "ctgy-id": "op-dental",
              "name": "Adhesivos y Acidos",
-             "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+           
  
            },
      ],
 
     [
          {   "id": "1",
-             "ctgy": "endo",
-             "subctgy": "conos",
-             "name": "Conos de Gutapercha y de Papel",
-             "imagen" : "http://localhost:3000/images/endodoncia.jpg",
+             "ctgy-id": "endo",
          
+             "name": "Conos de Gutapercha y de Papel",
+            
          },
          {   "id": "2",
-             "ctgy": "endo",
-             "subctgy": "sealer",
+             "ctgy-id": "endo",
+     
              "name": "Selladores de conductos radiculares",
-             "imagen" : "http://localhost:3000/images/endodoncia.jpg",
-         
+            
          },
          {   "id": "3",
-             "ctgy": "endo",
-             "subctgy": "irrigacion",
+             "ctgy-id": "endo",
+      
              "name": "Productos para irrigacion de conductos",
-             "imagen" : "http://localhost:3000/images/endodoncia.jpg",
-         },
+            },
      ],
           
      [
              {"id": "4",
             "name": "Prótesis fija y removible",
-            "ctgy": "prot",
-            "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+            "ctgy-id": "prot",
+          
          
            },
      ],
@@ -112,8 +87,8 @@ export default  [
      [     
      {   "id": "5",
         "name": "Prevención",
-        "ctgy": "preven",
-        "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+        "ctgy-id": "preven",
+      
          
       },
      ],
@@ -122,16 +97,16 @@ export default  [
 
       {   "id": "6",
         "name": "Ortodoncia y Ortopedia",
-        "ctgy": "ortod",
-        "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+        "ctgy-id": "ortod",
+      
          
       },
     ],
  [ 
       {   "id": "7",
         "name": "Periodoncia y Cirugía Plastica Gingival",
-        "ctgy": "perio",
-        "imagen" : "http://localhost:3000/images/operatoria-dental.jpg",
+        "ctgy-id": "perio",
+      
          
       },
 ],
@@ -139,8 +114,8 @@ export default  [
  [
         {   "id": "8",
         "name": "Odontopediatría",
-        "ctgy": "odontoped",
-        "imagen" : "http://localhost:3000/images/odontopediatria.jpg",
+        "ctgy-id": "odontoped",
+      
          
    },
 ],
@@ -148,8 +123,8 @@ export default  [
 [
    {   "id": "9",
         "name": "Radiología y Tomografía",
-        "ctgy": "rx",
-        "imagen" : "http://localhost:3000/images/rx.jpg",
+        "ctgy-id": "rx",
+      
          
    },
 ],
@@ -158,8 +133,8 @@ export default  [
 
       {   "id": "10",
         "name": "Cirugía convencional",
-        "ctgy": "cirugia",
-        "imagen" : "http://localhost:3000/images/cirugia.jpg",
+        "ctgy-id": "cirugia",
+       
          
       },
 ],
@@ -167,8 +142,8 @@ export default  [
   [
         {   "id": "11",
         "name": "Implantes Dentales y Regeneración de tejidos",
-        "ctgy": "implant",
-        "imagen" : "http://localhost:3000/images/implantes-dentales.jpg",
+        "ctgy-id": "implant",
+       
          
    },
 ],
@@ -177,24 +152,24 @@ export default  [
 
    {   "id": "12",
         "name": "Estética dental y facial",
-        "ctgy": "estetic",
-        "imagen" : "http://localhost:3000/images/estetica-facial.jpg",
+        "ctgy-id": "estetic",
+     
          
    },
 ],
   [
    {   "id": "13",
         "name": "Cirugía Maxilo Facial",
-        "ctgy": "maxilo-facial",
-        "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
+        "ctgy-id": "maxilo-facial",
+    
          
    }, 
 ],
   [
         {   "id": "14",
           "name": "Tecnología DIGITAL Y CAD-CAM",
-          "ctgy": "digital",
-          "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
+          "ctgy-id": "digital",
+       
     
      },
   ],
@@ -202,10 +177,15 @@ export default  [
 [
        {   "id": "15",
    "name": "Laser Odontológico",
-   "ctgy": "laser",
-   "imagen" : "http://localhost:3000/images/cirug-max-facial.jpg",
+   "ctgy-id": "laser",
+
     
      },
+     {   "id": "16",
+       "name": "Terapias alternativas en Odontología",
+       "ctgy-id": "alternativas",
+   
+},
 ]
 
 

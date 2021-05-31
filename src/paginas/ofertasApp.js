@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 
-const ofertasApp = () => {
+const OfertasApp = () => {
     return (
         <main>
             <Titulo>Productos Destacados</Titulo>
@@ -48,4 +48,4 @@ const Titulo = styled.p`
   margin-bottom: 10 px;
   `;
 
-  export default ofertasApp;
+  export default OfertasApp;

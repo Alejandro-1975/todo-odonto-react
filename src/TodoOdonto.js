@@ -1,6 +1,11 @@
 
 
 import './TodoOdonto.css';
+import './css/notFound.css';
+import './css/categorias.css';
+import './css/header.css';
+import './css/detalleProductos.css';
+import './css/detalleProductoscopy.css';
 
 import Home from './paginas/Home.js'
 import CardCapacitacion from './paginas/CardCapacitacion'
@@ -20,8 +25,12 @@ import CardBiblioteca from './paginas/CardBiblioteca'
 import CardInsumosSubCat from './paginas/CardInsumosSubCat'
 import Contacto from './paginas/Contacto.js'
 import Nosotros from './paginas/Nosotros.js'
-//import ofertasApp from './paginas/ofertasApp'
+import DetalleInsumos from './paginas/DetalleInsumos'
+import DetalleInsumoscopy from './paginas/DetalleInsumoscopy'
+
 import detalleCursos from './paginas/DetalleCapacitacion'
+import OfertasApp from './paginas/OfertasApp';
+import detalleInsumoscopy from './paginas/DetalleInsumoscopy';
 
 
 function TodoOdonto() {
@@ -31,7 +40,15 @@ function TodoOdonto() {
   return (
     <Router>
         <Switch>
-          
+           <Route path="/detalle-insumoscopy">
+              <DetalleInsumoscopy />
+          </Route>
+          <Route path="/detalle-insumos">
+              <DetalleInsumos />
+          </Route>  
+         <Route path="/ofertas">
+              <OfertasApp />
+          </Route>  
             <Route path="/insumos-subcat">
               <CardInsumosSubCat />
           </Route>  

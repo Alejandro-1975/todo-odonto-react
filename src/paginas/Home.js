@@ -1,6 +1,6 @@
 
 
-
+import OfertasApp from './OfertasApp'
 import tarjetas from './tarjetas.js'
 import {Link} from 'react-router-dom'
 import Navbar from './Navbar.js'
@@ -16,7 +16,7 @@ function Home
   
   return (
     <div className="todoOdonto">
-      <SearchAppBar/>           
+            
       <div className="head">
         
         <Navbar />
@@ -46,15 +46,24 @@ function Home
            </div>               
                 
           <aside className="asides" >
-         
+          <Link to="/ofertas">
               <aside className="ofertas">
-               <h1>¡¡OFERTAS!!</h1>
+               <h1 class="animate__heartBeat">¡¡OFERTAS!!</h1>
+               <img src="/images/ofertas/oferta.jpg" /> 
            
 
 
               </aside>
+              </Link>  
+              <div className="button">
+                     <button>
+                       <h2>Publicita aqui</h2>
+                       </button> 
+                   </div>
               <aside className="publicidades">
-                  publicidades
+                    <OfertasApp/>               
+                  <img src="/images/ofertas/oferta2.jpg" /> 
+                  <img src="/images/ofertas/oferta3.jpg" /> 
               </aside>
                                    
         

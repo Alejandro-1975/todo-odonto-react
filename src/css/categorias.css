@@ -1,0 +1,241 @@
+.contenedor{
+    background-color: black;
+    margin:0px;
+    
+    display: block;
+    color: white;
+}
+.tituloPagina{
+    background-color: black;
+    
+}
+.tituloPagina h1{
+    
+   padding-top:25px;
+  
+  
+}
+.ctgyCardsContainer{    
+    width: 96%;
+    margin:0px;
+    padding:0px;
+    margin-top: 0px;
+    background-color: black;
+    display: flex;
+   margin:20px;
+    flex-wrap: wrap;      
+    justify-content: space-evenly;
+    border: 1px solid white;
+    border-radius: 6px;
+   
+}
+.categoryTitle {
+    
+    width:100%;
+}
+.categoryTitle h2{
+    color:white;
+    font-size: 20px;
+    margin:12px;
+}
+
+
+
+.ctgyCards {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin:10px;
+    width:9%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba (0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.ctgyCards:hover {
+    
+    box-shadow: 12px 12px 20px rgba(223, 247, 9, 0.3);
+    background-color:rgba(192, 192, 189, 0.7); ;
+}
+
+
+.ctgyCards a {
+    text-decoration: none;
+    color: black;
+    margin-left: 6px;
+
+}
+
+
+.imgCtgy img {
+    width: 100%;
+    margin: 0px;
+}
+
+.titleCtgy h4{
+    font-size: 12px;
+    margin: 3px;
+    text-align: center;
+    color: black;
+  
+  
+}
+.tituloPagina{
+    background-color: black;
+    
+}
+.tituloPagina h1{
+    
+   padding-top:25px;
+  
+  
+}
+.categoryFilter {
+    background-color: black;
+    color:white;
+    margin:auto;
+    display: block;
+    border: 1px solid white;
+    border-radius: 6px;
+    width:97%;
+}
+.filtroCheck{
+    
+    display: flex;
+    margin: auto;
+    padding:10px;
+    justify-content: space-between;
+    width:90%;
+}
+    
+.filtroTitle {
+    background-color: black;
+    color:white;
+    padding:12px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.filtroTitle h2{
+    background-color: black;
+    color:white;    
+    font-size: 20px;;
+   
+}
+.filtroTitle p{
+    background-color: black;
+    color:white;    
+    font-size: 14px;;
+    margin: 10px;
+   
+   
+}
+
+
+.filtro {
+    background-color: black;
+    color:white;
+    display: flex;
+    margin-top: 0px;
+    
+}.filtro h2{
+    background-color: black;
+    color:white;
+    margin:0px;
+}  
+.filtro {
+    background-color: black;
+    color:white;
+   
+    
+}
+.filtro label {
+    font-size: 14px;
+   
+    
+}
+
+.datosProductoMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid grey;
+    width:auto;
+    border-radius: 6px;
+    margin:10px;
+    padding:10px;
+    background-color: white;
+}
+.datosProductoMain:hover {
+    
+    box-shadow: 12px 12px 20px rgba(223, 247, 9, 0.3);
+    
+}
+.datosProductoNameMain {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    color:black;
+    font-size:26px;
+}
+.datosProductoNameMain div{
+    display:flex;
+
+}
+.datosProductoNameMain h4{
+    color:black;
+    font-size:16px;
+    margin:3px;
+}
+.datosProductoNameMain h5{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+    text-transform: uppercase
+ }
+ .datosProductoNameMain h6{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+ .datosProductoNameMain P{
+    color:red;
+    font-size:14px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+.datosProductoNameMain div img{
+    max-width: 100px;
+    max-height: 100px;
+    margin:0px;
+}
+.buttonProducto {
+    display: block;
+    margin:auto;
+}
+.buttonProducto button{
+    display: block;
+    color:white;
+    margin:0px;
+    padding:3px 6px;
+    background-color: rgb(19, 87, 19);
+    border-radius: 6px;
+    height:30px;
+   
+}
+.buttonProducto button:hover{
+    background-color: rgb(19, 56, 19);
+    cursor:pointer;
+}
+    
+    
+    
+
+

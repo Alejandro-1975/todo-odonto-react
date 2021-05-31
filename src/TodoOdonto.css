@@ -1,65 +1,8 @@
-
-.firstNav  {
-    
-    
-    background: #00263A;  
-   
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-   text-align: right;
-   margin:12 px;
-   display: block;
-}
-.firstNav  a {
-    
-  
-    background: #073650; 
-    padding: 6px;    
-    border-radius: 8px;
-    border: 1px solid white;
-    margin: 6px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;  
-}   
-.firstNav > li {
-    float:left;
-}
-.firstNav li ul{
-    display:none;
-    position:absolute;
-    min-width: 140px;
-}
-.firstNav li:hover > ul {
-    display: block;
+.todoOdonto {       
+    background-color: black;  
 }
 
 
-
-
-
-.head { 
-    overflow: hidden;
-    background: #00263A;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    margin:0px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    z-index: 10;
-  top: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-   
-.head img{
-    height: auto;
-    width: 30%;
-    z-index: 10 ;
-}
 
 .banner  {
     margin:0px;
@@ -88,7 +31,7 @@
    
 .div-tarjetas-aside {
   
-    background-color:#00263A ; 
+    background-color:black ; 
     margin-top: 0px;
     padding-top:50px;
     display:flex;
@@ -109,16 +52,16 @@
 }
   
 .tarjets {
-    background-color:#00263A ;
+    background-color:black ;
     width: 72%;
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .asides {
-    background-color: lightgray;
+    
     width: 25%;
-    border: 1px solid gray;
+    
 }
 
 .tarjet-list {
@@ -152,7 +95,7 @@
 
 .tarjet-list:hover {
     transform: translateY(-15px);
-    box-shadow: 12px 12px 20px rgba(0,0,0,0.9);
+    box-shadow: 12px 12px 20px rgba(252, 250, 166, 0.3);
     
 }
 .tarjet-list name {
@@ -163,25 +106,69 @@
 
 }
 .ofertas {
-    height: 40px;
-    border: 1px solid gray;
+    display:flex;
+    flex-direction: column;
     overflow: hidden;
 }
-.publicidades {
-    
-    height: 40px;
-    border: 1px solid gray
-}
-.linksEmpresas {
-       
+.ofertas h1{
     display: flex;
-    flex-wrap: wrap;
-    border: 1px solid gray;
+    justify-content: center;
+    color: green;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+    
+
+.ofertas img{
+    display:flex;   
+    width:100%;
+    margin-bottom: 24px;
+}
+.publicidades {
+    display:flex;
+    flex-direction: column;
+    overflow: hidden; 
+    margin-top:12px;
+    
+    
+}
+.publicidades img{
+    display:flex;   
+    width:100%;
+    margin-bottom: 24px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    display: flex;
+    justify-content: center;
+    margin:6px 12px;
+    background-color: white;
+    width:50%;
+    border-radius: 6px;
+}
+.button button p{
+    background-color: green;
+    color:black;
+    font-weight: bold;
+}
+.button button:hover{
+    background-color: rgb(188, 199, 188);
+    cursor: pointer;
+}
+
+
+.linksEmpresas {      
+    display: flex;
+    flex-wrap: wrap;   
     justify-content: space-evenly;
     
 }
 .linksEmpresas h2{
-       
+    color:white;   
     margin: 6px;
     display: block;
     width:100%;
@@ -220,6 +207,7 @@
    
  }
 .banner2 {
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     margin: 12px auto;
@@ -228,6 +216,7 @@
     border: 1px solid gray
 }
 .recomendaciones {
+    background-color: white;
     display: block;
     justify-content: space-evenly;
     margin: 12px auto;
@@ -236,6 +225,7 @@
     border: 1px solid gray
 }
 .recomendaciones h1 {
+    margin:12px;
     font-size:32px;
 }
 .recomendacion img{
@@ -256,28 +246,32 @@
     width: 100%;
     margin:12 px ;
     padding: 12 px;
+    justify-content: space-between;
 }
 .recomendacion {
+    display: flex;
+    flex-direction: column;
     margin:12 px;
-    
+    width:49%;
     background-color:#00263A ;
 }
 
 .entidadesOdontologicas {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 12px 12px;
-    width: 100%;
-    height: auto;
-    border: 1px solid gray;
+    width: 98%;
+    
+    
     border-radius: 20px;
         
 }
 .entidadesOdontologicas h1 {
     display: flex;
     justify-content: left;
-    margin: 6px;
+    margin: 12px;
     padding: 12 px;
     width: 100%;
     
@@ -322,32 +316,112 @@
     
 
 .footer {
-    display: inline-block;
+    display: flex;
     background: #00263A;
+    justify-content: space-between;
     color: white;
     font-weight: bold;
     font-size: 16px;
-    height: 200px;
+    width:100%;
+
+  
+    
 }
 .footer-item {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background: #00263A;
-    align-items: right;
+    align-items: left;
     flex-wrap: wrap;
-    height: 100px;
+    width: 100%;
+    margin-bottom:0px;
        
 }
 .footer-item img{
-height:35%;
-    width: 15%;
-   
-   
-}
+    width:15%;
+    margin:12px;
+    margin-bottom: 3px;
+} 
+
+
 .footer-item p{
     background: #00263A;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
+    
+    margin-bottom:0px;
 }
+   
+.listaFooter{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin:24px;
+}   
+
+
+.footerLink a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    font-weight: lighter;
+    font-size:12px;
+    
+   
+}
+.footerLink  {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-left:12 px;
+}
+.redes{
+    margin: 20px;
+    padding:12px;
+    display: flex;
+    background-color:#00263A;
+    align-items: stretch;
+ }
+ .redes img{
+    margin-left:8px;
+    background-color:#00263A;
+    width:30px;
+ }
+ .redes h4{
+    margin-top:  0px;
+    color:white;
+    background-color:#00263A;
+    font-weight: lighter;
+ }
+ .footer-polit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #00263A;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom:0px;
+ }
+ .footer-polit a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin:12px;
+    border-radius: 6px;
+    padding:6px 12px;
+ }
+ .footer-polit a:hover{
+    background-color:#13455f; 
+    color: white;
+   
+ }
 .bottomNav {
     background: #00263A;
     color: white;
@@ -499,29 +573,61 @@ height:35%;
    width: 100%;
     
 }
-.publicidades{
-    color: white;
-    width: 25%;
-    background-color: black;
 
-}
+
+
 .cards-aside-ytch {
   
     background-color:black ; 
     margin-top: 0px;
-    padding-top:50px;
+    padding-top:12px;
     display:flex;
-    justify-content: space-evenly;
+   justify-content: space-between;
     flex-wrap: wrap;
 } 
-.datosCardInsumos h4{
-    font-size: 22px;
-    margin-left:6px;
-}
-.insumosCards {
+.containerInsumosCtgy{    
+    width: 98%;
+    margin:0px;
+    margin-top: 0px;
+    background-color: black;
     display: flex;
     margin: 10px;
-    width:40%;
+    flex-wrap: wrap;      
+    justify-content: space-evenly;
+    border: 1px solid white;
+    border-radius: 12px;
+   
+}
+.containerInsumosCtgy a{    
+   text-decoration: none;
+   color:black;
+   text-align: center;
+   margin: 8px;
+}
+.containerInsumosCtgyTitle {    
+    background-color: black;
+    display: inline-block;
+    color: white;   
+    width:100%;
+    margin:0px;
+   
+}
+.containerInsumosCtgyTitle h1{    
+      
+    color: white;
+    margin: 20px;
+    font-size: 28px;
+   width: 100%;
+    
+}
+
+.insumosCards {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: auto;
+    width:90px;
+    height:150px;
     border: 1px solid gray;
     border-radius: 8px;
     background-color: white;
@@ -530,25 +636,57 @@ height:35%;
     transition: all 0.25s;
 }
 .insumosCards:hover {
-    transform: translateY(-15px);
-    box-shadow: 12px 12px 20px rgba(0,0,0,0.3);
+    
+    box-shadow: 12px 12px 20px rgba(223, 247, 9, 0.3);
+    background-color:rgba(192, 192, 189, 0.7); ;
 }
+
+
 .insumosCards a {
     text-decoration: none;
     color: black;
-    margin-left: 6px;
+    margin: auto;
 
 }
+
+
 .datosCardInsumos img {
-    width: 180px;
-    margin: 0px;
+    max-width:9git0px;    
+    margin: auto;
 }
 
 .cardInsumosTitle {
-    font-size: 20px;
+    font-size: 12px;
     margin-left: 10px;
   
 }
+.subcategory {
+    color: white;
+    width: 20%;
+}
+.subcategory h3{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+   width: 100%;
+}
+.producto {
+    color: white;
+    width: 33%;
+}
+.producto h3{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+   width: 100%; 
+}
+.containerInsumosCtgyTitle h3{    
+      
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+   width: 100%;
+}    
 
 
 @media screen and (max-width: 768px) {

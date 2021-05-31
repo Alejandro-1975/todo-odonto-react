@@ -35,4 +35,16 @@ export default  [
         "imagen" : "/images/logos/logo-empr-AO.png",
         "id" : "5",
     }, 
+    {        
+        "name": "Forestadent Orthodontics",
+        "url" : "https://www.forestadent.com/es-es/",
+        "imagen" : "/images/logos/logoEmprForestadent.png",
+        "id" : "6",
+    }, 
+    {        
+        "name": "Nemotec Software",
+        "url" : "https://www.nemotec.com/",
+        "imagen" : "/images/logos/logoEmprNemotec.jpg",
+        "id" : "7",
+    }, 
 ]

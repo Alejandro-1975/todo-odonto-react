@@ -1,0 +1,282 @@
+.contenedorDetail{
+    background-color: black;
+    margin:0px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.tituloPage{
+    background-color: black;
+    display: block;
+    color:white;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+}
+.tituloPage h1{
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.vendedor{
+    background-color: white;
+    width:95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top:80px;
+
+}
+.datosVendedorTitle {
+    color:black;
+    display: block;
+   }
+.datosVendedorTitle h2{
+ color:black;
+ margin:12px;
+}
+.datosVendedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid grey;
+    width:auto;
+    border-radius: 6px;
+    margin:10px;
+    padding:10px;
+}
+.datosVendedorName {
+    align-items: center;
+    color:black;
+    font-size:26px;
+}
+.datosVendedorName h4{
+    color:black;
+    font-size:26px;
+    margin:3px;
+}
+.datosVendedorName h5{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+    text-transform: uppercase
+ }
+ .datosVendedorName h6{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+ .datosVendedorName P{
+    color:red;
+    font-size:14px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+.datosVendedorName img{
+    max-width:50%;
+    margin:0px;
+}
+.datosVendedor button{
+    display: flex;
+    color:white;
+    margin:0px;
+    padding:3px 6px;
+    background-color: rgb(19, 87, 19);
+    border-radius: 6px;
+   
+}
+.datosVendedorLogo iframe{
+    width:100%;
+    width:600px; 
+    height:450;
+    border:0;
+   
+    
+}
+.containerDetailProduct{
+    
+    background-color: white;
+    width:45%;
+    display:block;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top:80px;
+    padding: 20px;
+}
+.datosProductos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid grey;
+    width:auto;
+    border-radius: 6px;
+    margin:10px;
+    padding:10px;
+}
+.datosProductosName {
+    align-items: center;
+    color:black;
+    font-size:26px;
+}
+.datosProductosName h4{
+    color:black;
+    font-size:26px;
+    margin:3px;
+}
+.datosProductosName h5{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+    text-transform: uppercase
+ }
+ .datosProductosName h6{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+ .datosProductosName P{
+    color:red;
+    font-size:14px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+.datosProductosName img{
+    max-width:50%;
+    margin:0px;
+}
+.datosProductos button{
+    display: flex;
+    color:white;
+    margin:0px;
+    padding:3px 6px;
+    background-color: rgb(19, 87, 19);
+    border-radius: 6px;
+   
+}
+.containerDetailSalers{
+    
+    background-color: white;
+    width:45%;
+    display:block;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top:80px;
+    padding: 20px;
+}
+
+.datosSaler {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid grey;
+    width:auto;
+    border-radius: 6px;
+    margin:10px;
+    padding:10px;
+}
+.datosSalerName {
+    align-items: center;
+    color:black;
+   
+       
+}
+.datosSalerName div{
+    align-items: center;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.datosSalerName h4{
+    color:black;
+    font-size:16px;
+    margin:3px;
+}
+.datosSalerName h5{
+    color:green;
+    font-size:14px;
+    margin-right:10px;
+    font-weight: bold;
+    text-transform: uppercase
+ }
+ .datosSalerName h6{
+    color:rgb(46, 49, 49);
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+ .datosSalerName h3{
+    color:black;
+    font-size:12px;
+    margin:3px;
+    font-weight: bold;
+    text-transform: uppercase
+   
+ }
+ .datosSalerName P{
+    color:rgb(46, 49, 49);
+    font-size:14px;
+    margin:3px;
+    font-weight: bold;
+   
+ }
+.datosSalerName img{
+    max-width:50%;
+    margin:0px;
+}
+.datosSaler button{
+    display: flex;
+    color:white;
+    margin:0px;
+    padding:3px 6px;
+    background-color: rgb(19, 87, 19);
+    border-radius: 6px;
+    justify-content: right;
+   
+}
+.datosSalerLogo iframe{
+    width:100%;
+    width:600px; 
+    height:450;
+    border:0;
+   
+    
+}
+.containerProductRel{
+    width:100%;
+    background-color: white;
+   
+    display:block;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top:80px;
+    padding: 20px;
+}
+.productDetailRel{
+    display: block;
+    margin:auto;
+    width:90%;
+}
+.productRel div h4{
+    color:black;
+}
+

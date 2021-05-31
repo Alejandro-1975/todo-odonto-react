@@ -23,12 +23,15 @@ const useStyles = makeStyles((theme) => ({
    
   },
   menulist: {
-    zIndex: '100',
+    zIndex: '50',
 },
+
 button:{
     color: 'white',
     
 }
+
+
 
 }));
 
@@ -76,7 +79,7 @@ export default function MenuListComposition() {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          Menu Categorias Principales
+          Menu Inicio
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (
@@ -87,23 +90,16 @@ export default function MenuListComposition() {
               <Paper className={classes.menu}>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList className={classes.menulist} autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown} >
-                    <MenuItem onClick={handleClose}>Compras Odontología
-                         <Link to="/insumos"className={classes.link}>Insumos</Link>
-                         <Link to="/equipamiento"className={classes.link}>Equipamiento</Link>
-                         <Link to="/instrumental"className={classes.link}>Instrumental</Link> 
-                         <Link to="/software"className={classes.link}>Software</Link>
+                    <MenuItem onClick={handleClose}>
+                         <Link to="/nosotros"className={classes.link}>Nosotros</Link>  
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                        <Link to="/capacitaciones"className={classes.link}>Capacitacion</Link> 
+                        <Link to="/"className={classes.link}>Página Principal</Link>   
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                        <Link to="/libreria"className={classes.link}>Libros</Link>
-                        <Link to="/alquileres-usados"className={classes.link}>Clasificados</Link>             
-                        <Link to="/rh"className={classes.link}>Recursos Humanos</Link>
-                        <Link to="/youtube"className={classes.link}>Canales de Youtube</Link>
-                        <Link to="/blogs"className={classes.link}>Blogs</Link>
+                        <Link to="/contacto"className={classes.link}>Contacto</Link>
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

@@ -9,6 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import { Link } from "react-router-dom";
 import MenuListComposition from './MenuList'
+import MenuListComposit from './MenuListPage'
 
 const useStyles = makeStyles((theme) => ({
   toolbar:{
@@ -73,13 +74,29 @@ const useStyles = makeStyles((theme) => ({
     border: '1px solid white',
     padding: '3px 6px',
     borderRadius: '6px',
-    margin:'3px 3px auto'
+    margin:'3px 3px auto',
+   
          
   },
   img: {
     width:'25%',
     display: 'flex',
-  }
+  },
+  slogan: {
+    width:'100%',
+    display: 'flex',
+    justifyContent: 'flex-end'
+  },
+  sloganp: {
+    fontSize:'16px',
+  },
+  menu: {
+    width:'100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+  },
+  
   
 }));
 
@@ -99,7 +116,16 @@ export default function SearchAppBar() {
            
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
+          <div className={classes.slogan}>
               <img src="/images/logos/todoodonto-2.jpg"className={classes.img}/>
+              <p className={classes.sloganp}>"Todo lo que necesitas de Odontología en un solo lugar"</p>
+          </div>  
+           <div className={classes.menu}>
+             <MenuListComposition />
+             <MenuListComposit /> 
+           </div> 
+            
+         
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -116,11 +142,11 @@ export default function SearchAppBar() {
               </div>
           
            
-                  <Typography >     
+                  {/* <Typography >     
                       <Link to="/nosotros"className={classes.link}>Nosotros</Link>   
                   </Typography>  
                   <Typography>   
-                      <Link to="/"className={classes.link}>Página Principal</Link>   
+                    <Link to="/"className={classes.link}>Página Principal</Link>    
                  </Typography>  
                  <Typography> 
                      <Link to="/capacitaciones"className={classes.link}>Capacitacion</Link>                                          
@@ -138,13 +164,14 @@ export default function SearchAppBar() {
                       <Link to="/contacto"className={classes.link}>Contacto</Link>
                       <Link to="/insumos-subcat"className={classes.link}>InsumosSubCat</Link>
                    </Typography>  
-                 
+                  */}
           </Typography>
-          <MenuListComposition />
+          
           
               
               <MenuIcon />  
-              
+                 
+               
         </Toolbar>
       </AppBar>
     </div>
