@@ -50,5 +50,18 @@ export default  [
     
  
 },
+{   
+     "id": "5",
+     "ctgy": "2",       
+     "subctgy": "8",  
+     "name": "Composite Filtek Bulk Fill",
+     "presentacion": "Jeringa de 4gr",   
+     "imagen" : "/images/productBulkFill3M.jpg",
+     "marca" : "3M Espe",
+     "detail" : "Jeringa de Composite de nanoparticulas de 4 gr, colores surtidos. Fotopolimeriza hasta 5mm en una capa", 
+     "urlDetail": "https://www.3m.com.ar/3M/es_AR/dental-la/productos/resina-restaurativa-filtek-bulk/",
+    
+ 
+},
 
 ]

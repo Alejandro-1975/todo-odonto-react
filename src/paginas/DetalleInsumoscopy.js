@@ -5,12 +5,43 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import RelacionarProductos from '../componentes/RelacionarProductos'
 import{Link} from 'react-router-dom'
+import {useState, useEffect} from 'react'
+import Cart from '../componentes/Cart.js'
 
 
 import CreateSalerData from '../componentes/CreateSalerData'
 
-function detalleInsumoscopy (dato){
+function DetalleInsumoscopy (dato){
+  
+  var [cart, setCart] = useState([])
+  useEffect(() => {
+    setCart( JSON.parse(localStorage.getItem('cart')) )
+}, [])
 
+function addToCart(producto) {
+    var exists = cart.find(p => p.id == producto.id)
+
+    if (exists) {
+        var tmp = cart.map(function (p) {
+            if (p.id == producto.id) {
+                p.qty++
+                p.stock--
+            }
+
+            return p
+        })
+    } else {
+        var tmp = cart.concat({
+            ...producto,
+            qty : 1,
+            stock : producto.stock-1
+        })
+    }
+
+    setCart(tmp)
+
+    localStorage.setItem('cart', JSON.stringify(tmp))
+}
     return(
       
       <>
@@ -65,7 +96,8 @@ function detalleInsumoscopy (dato){
                                   <div>
                                     <p>Marca: {dato.marca}</p>  
                                     <a href= {dato.urlDetail}target="_blank">
-                                       <button>                                   
+                                       <button 
+                                       onClick={() => addToCart(dato)}>                                   
                                           Agregar al carrito                                    
                                        </button>     
                                     </a> 
@@ -113,4 +145,4 @@ function detalleInsumoscopy (dato){
 }
 
 
-export default detalleInsumoscopy
+export default DetalleInsumoscopy

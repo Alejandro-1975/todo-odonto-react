@@ -1,44 +1,37 @@
 import Navbar from './Navbar.js'
 import CategoriaInsumos from './jsonInsumosCategorias'
 import jsonInsumosSubCategory from './jsonInsumosSubCategory'
-import {Link} from 'react-router-dom'
+import {Link,useParams} from 'react-router-dom'
 import Footer from './Footer'
 import jsonInsumosItems from './jsonInsumosItems'
 import Slideshow from '../componentes/Slideshow'
+import {useState,useEffect} from 'react'
 
-// import jsonInsumosSubCategory from './jsonInsumosSubCategory'
-// import {useState,useEffect} from 'react'
-// import {useParams} from 'react-router-dom'
 
-// function selectSubctgy (){
-//     var ctgy = jsonInsumosSubCategory{dato.ctgy-id}
-//     var [SubCtgy, setSubCtgy] = useState({})
 
-//     useEffect(()=>{
-
-//         var resultado = jsonInsumosSubCategory.filter(function(dato){
-//             if (ctgy==id) {
-//                return  
-//                  <div className="subcategory">
-               //      <h3>Subcategorias</h3>
-                //                                                                        
-             //         <div className="insumosCards" key={index}>                                              
-             //            <div className="cardInsumosTitle">
-             //                 <h4>{dato.name}</h4>                                    
-              //            </div>       
-                 //     </div> )                                    
-           //     }
-                   
-                //  )}
-                //  </div>
-//             }
-//             return false
-//         })
-//         setSubCtgy(resultado)
-//     },[]); 
-                       
-  
 function InsumosOd (){
+
+
+   var {id} = useParams()
+   
+   var [subCtgy, setSubCtgy] = useState([])
+
+    useEffect(()=>{
+
+      
+    },[]); 
+                       
+  function SearchbyCtgy (e){
+      var id = e.id
+    var resultado = jsonInsumosSubCategory.filter(function(dato){
+        if ((dato.ctgyId)==id) {
+        return true
+        }
+        return false
+    })
+    setSubCtgy(resultado)
+  }
+
         return(
             <div>
                 <Navbar />  
@@ -60,8 +53,8 @@ function InsumosOd (){
                 
                         {CategoriaInsumos.map(function(dato,index){
                             return (
-                                <Link to={`${dato.subctgy}/${dato.id}`}>                                           
-                        <div className="insumosCards" key={index}>                                                
+                                                                     
+                        <div className="insumosCards" key={index} onClick={() => SearchbyCtgy(dato)}>                                                
                         
                             <div className="datosCardInsumos">             
                                  <img src={dato.imagen} />
@@ -73,7 +66,7 @@ function InsumosOd (){
                             </div>                              
                        
                     </div> 
-                    </Link>  ) 
+                    ) 
                     
                     }
                    
@@ -85,20 +78,24 @@ function InsumosOd (){
                      <div className="containerInsumosCtgyTitle">
                        <h3>Subcategorias</h3>
                      </div >
-                     {jsonInsumosSubCategory.map(function(dato,index){
-                            return (
+                     {subCtgy.map(function(dato){
+                         return(
+                            <div className="insumosCardsSubCtgy" >                                              
+                            <div className="cardInsumosTitle">
+                                 <h4>{subCtgy.name}</h4>                                    
+                            </div>       
+                       
+                     </div> 
+                         )
+
+                     })}
                                                                     
-                        <div className="insumosCards" key={index}>                                              
-                           <div className="cardInsumosTitle">
-                                <h4>{dato.name}</h4>                                    
-                           </div>       
-                      
-                    </div> ) 
+                       
                     
-                    }
+                    
                    
-                 )}
-                 </div>        
+                 
+                 </div>         
                 <div className="cards-aside-ytch">
                 
                 
@@ -120,10 +117,12 @@ function InsumosOd (){
                                      <h4>{dato.name}</h4>                                                                                                 
                                 </div>  
                                 <div className="buttonProducto">
+                                    <Link to='/detalle-insumoscopy'>
                                     <button>                                   
                                       Ir a detalles y precios del producto                                     
                                     </button> 
-                                </div>                                  
+                                    </Link>  
+                                </div>                                
                                    
                                                     
                          </div> ) 
@@ -139,7 +138,7 @@ function InsumosOd (){
                 
               
                  <aside className="publicidades">
-                 <img src="http://localhost:3000/public/images/ofertas/oferta.jpg" /> 
+                 hola
                  </aside>
                  </div>
                  </div>
@@ -152,6 +151,6 @@ function InsumosOd (){
 
 export default InsumosOd
  
-
-                                 
+//<Link to={`${dato.subctgy}/${dato.id}`}>
+//</Link>                               
                                

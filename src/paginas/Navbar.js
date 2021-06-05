@@ -51,14 +51,14 @@ function Navbar() {
               <img src="/images/logos/todoodonto-2.jpg"/>
               <p >"Todo lo que necesitas de Odontología en un solo lugar"</p>
         </div>
-        <Link to='/detalle-insumos'>DetalleInsumos</Link>  
-        <Link to='/detalle-insumoscopy'>DetalleInsumoscopy</Link>  
+       
+        
      </div>      
     </>
   )
 }
 export default Navbar                 
                         
-                                     
+{/* <Link to=''></Link>                                     */}
            
 
