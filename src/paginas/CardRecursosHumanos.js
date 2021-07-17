@@ -4,6 +4,7 @@ import MediaCard from './CardsCapacitacion'
 import DataCapacitacion from './jsonDataCapacitacion'
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
+
  
 function RecursosHumanos (){
         return(

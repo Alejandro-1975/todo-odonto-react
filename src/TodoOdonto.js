@@ -7,6 +7,7 @@ import './css/header.css';
 import './css/detalleProductos.css';
 import './css/detalleProductoscopy.css';
 
+
 import Home from './paginas/Home.js'
 import CardCapacitacion from './paginas/CardCapacitacion'
 import NotFound from './paginas/404'
@@ -33,6 +34,7 @@ import OfertasApp from './paginas/OfertasApp';
 import detalleInsumoscopy from './paginas/DetalleInsumoscopy';
 
 
+
 function TodoOdonto() {
   useEffect(()=>{
     window.scrollTo(0, 0)
@@ -40,6 +42,7 @@ function TodoOdonto() {
   return (
     <Router>
         <Switch>
+        
            <Route path="/detalle-insumoscopy">
               <DetalleInsumoscopy />
           </Route>

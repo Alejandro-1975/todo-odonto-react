@@ -3,7 +3,7 @@ export default  [
     
     {   "id": "1",
         "ctgyId": "1",
-        "subctgyId": "2",
+        "subctgyId": "12",
         "name": "Guantes Latex",
         "presentacion": "caja por 100 unidades",               
         "imagen" : "/images/productGuantesLatex.jpg",
@@ -16,7 +16,7 @@ export default  [
    {   
        "id": "2",
        "ctgy": "1",       
-       "subctgy": "2",  
+       "subctgy": "12",  
        "name": "Guantes Nitrilo",
        "presentacion": "caja por 200 unidades - COLOR NEGRO",      
        "imagen" : "/images/productGuantesNitriloAzul.jpg",
@@ -28,7 +28,7 @@ export default  [
 {   
      "id": "3",
      "ctgy": "2",       
-     "subctgy": "8",  
+     "subctgy": "21",  
      "name": "Composite Z-350XT",
      "presentacion": "Jeringa de 4gr",   
      "imagen" : "/images/productZ350XT.webp",
@@ -40,7 +40,7 @@ export default  [
 {   
      "id": "4",
      "ctgy": "2",       
-     "subctgy": "10",  
+     "subctgy": "23",  
      "name": "Singlebond Universal",
      "presentacion": "Envase 4ml",   
      "imagen" : "/images/productSingleBondUniversal.jpg",
@@ -53,7 +53,7 @@ export default  [
 {   
      "id": "5",
      "ctgy": "2",       
-     "subctgy": "8",  
+     "subctgy": "21",  
      "name": "Composite Filtek Bulk Fill",
      "presentacion": "Jeringa de 4gr",   
      "imagen" : "/images/productBulkFill3M.jpg",
@@ -63,5 +63,17 @@ export default  [
     
  
 },
-
+{   
+     "id": "6",
+     "ctgy": "1",       
+     "subctgy": "15",  
+     "name": "Optradam Plus",
+     "presentacion": "Paquetes x unidad",   
+     "imagen" : "/images/productOptradamPlus.jpg",
+     "marca" : "IVOCLAR",
+     "detail" : "Diseño tridimensional con forma anatómica y flexible, OptraDam es completamente diferente a los diques de goma convencionales. Como el dique se estira automáticamente en la dirección oral, se asegura un encaje automático en la cavidad oral. Tallas “Regular” y “Pequeña” para adultos.", 
+     "urlDetail": "https://www.ivoclarvivadent.es/es-es/p/todos/productos/accesorios-clinica-instrumentos/ayudas-de-aplicacion/optradam-plus",
+    
+ 
+},
 ]

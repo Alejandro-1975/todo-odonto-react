@@ -107,5 +107,11 @@
        "imagen" : "/images/catAtm.jpg",
     
 },
+{      "id": "18",
+       "name": "Fotografia Odontológica",
+       "ctgy": "foto",
+       "imagen" : "/images/catAtm.jpg",
+    
+},
 
 ]

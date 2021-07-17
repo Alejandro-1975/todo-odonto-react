@@ -8,7 +8,8 @@
 }
 .tituloPage{
     background-color: black;
-    display: block;
+    display:flex;
+    justify-content: space-between;
     color:white;
     margin-top: 0;
     margin-bottom: 0px;
@@ -18,6 +19,23 @@
     padding-top: 15px;
     margin-top: 0;
     margin-bottom: 0px;
+}
+.tituloPage img{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.tituloPage h6{
+    margin:0px;
+    margin-right: 50px;
+   visibility: hidden;
+}
+.tituloPage h6:hover{
+  visibility: visible;
+}
+.carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .vendedor{
     background-color: white;

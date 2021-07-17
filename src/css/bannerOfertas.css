@@ -1,0 +1,11 @@
+.componenteBannerHead{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.ofertaImgBanner{
+    width:30%,
+}
+.bannerHead{
+    width:30%,
+}

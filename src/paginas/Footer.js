@@ -53,6 +53,10 @@ function Footer() {
                  <img src="/images/logos/todoodonto-2.jpg"/>
                   
         </div>
+        <div className="footer-item">
+                 <p>2021 Copyright TodoOdonto® Todos los derechos reservados</p>               
+                  
+        </div>
         
         </>)
 }

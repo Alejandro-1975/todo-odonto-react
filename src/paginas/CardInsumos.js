@@ -5,6 +5,8 @@ import {Link,useParams} from 'react-router-dom'
 import Footer from './Footer'
 import jsonInsumosItems from './jsonInsumosItems'
 import Slideshow from '../componentes/Slideshow'
+import Carrousel from '../componentes/Carrousel'
+
 import {useState,useEffect} from 'react'
 
 
@@ -37,9 +39,12 @@ function InsumosOd (){
                 <Navbar />  
                
                 
-                <div className="banner">   
+                <div className="bannerProductosOferta">   
             
               
+                <Carrousel/>
+             
+
             
                  </div>
                  <div className="contenedor">
@@ -99,7 +104,7 @@ function InsumosOd (){
                 <div className="cards-aside-ytch">
                 
                 
-                 <div>
+                 <div className="contenedorProductos">
                  <div className="producto">
                     <h3>Producto</h3>
                  </div>

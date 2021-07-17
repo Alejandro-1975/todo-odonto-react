@@ -7,6 +7,7 @@ import jsonLinksEmpresas from './jsonLinksEmpresas'
 import Footer from './Footer'
 import SelectCategory from '../componentes/SelectCategory'
 import SelectCheckbox from '../componentes/SelectCheckbox'
+import CarrouselFade from '../componentes/CarrouselFade'
  
 function Capacitacion (){
         return(
@@ -69,6 +70,7 @@ function Capacitacion (){
          
                     <aside className="ofertas">
                          <h1>¡¡OFERTAS!!</h1>
+                         <CarrouselFade/>
                     </aside>
                     
                     <aside className="publicidades">

@@ -9,7 +9,8 @@ import theme from '../theme'
 
 let styles = makeStyles({
     actionIcon : {
-        fontSize : "16px"
+        fontSize : "16px",
+        color:"yellow"
     }
 })
 

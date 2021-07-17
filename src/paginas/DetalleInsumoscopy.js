@@ -9,13 +9,15 @@ import {useState, useEffect} from 'react'
 import Cart from '../componentes/Cart.js'
 
 
+
+
 import CreateSalerData from '../componentes/CreateSalerData'
 
 function DetalleInsumoscopy (dato){
   
   var [cart, setCart] = useState([])
   useEffect(() => {
-    setCart( JSON.parse(localStorage.getItem('cart')) )
+    setCart( JSON.parse(localStorage.getItem('cart'))||[] )
 }, [])
 
 function addToCart(producto) {
@@ -47,7 +49,14 @@ function addToCart(producto) {
       <>
       <Navbar/>
       <div className="tituloPage">
-             <h1>Detalle del Producto</h1>
+            <div>
+              <h1>Detalle del Producto</h1>
+             </div> 
+             <div className="carrito"> 
+             <img src="/images/icons/shopingCart.png" /> 
+             <h6>Mostrar el carrito</h6>
+             </div> 
+            
           </div >
       <div className="contenedorDetail">
         
@@ -64,7 +73,9 @@ function addToCart(producto) {
                                     <img src={dato.imagen} /> 
                                     <h6>Presentación: {dato.presentacion}</h6>  
                                     <p>Marca: {dato.marca}</p>   
-                                    <p>Detalle: {dato.detail}</p>  
+                                    <p>Precio PROMEDIO: VER FUNCION PARA SACAR ESTE PROMEDIO</p>  
+                                    <p>Detalle: {dato.detail}</p> 
+                                     
                                     <p>PUNTUACION DEL PRODUCTO</p>                       
                                 </div>  
                                   <a href= {dato.urlDetail}target="_blank">
@@ -106,7 +117,9 @@ function addToCart(producto) {
                                     <h5>Precio: {dato.price}</h5>   
                                     <p>Oferta: {dato.ofertaBool}</p>
                                     <h5>Oferta: {dato.oferta}</h5>  
+                                    <h5>Combos: {dato.combo}</h5>  
                                     <p>Stock: {dato.stock}</p>
+
                                   </div>                                    
                                   <div>
                                     <h3>Local Comercial: {dato.vendedor}</h3> 
@@ -123,10 +136,13 @@ function addToCart(producto) {
               }
               
            )}
+           
 
            </div> 
           
+          
            </div>
+           <Cart/>
            <div className="productDetailRel">
            <RelacionarProductos/>
           

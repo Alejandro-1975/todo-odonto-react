@@ -39,6 +39,9 @@
      "name": "Online con práctica presencial",
      "ctgy": "online-prac-pres",
      },      
- 
+     {   "id": "8",
+     "name": "Online REC Hotmart",
+     "ctgy": "online-hotmart",
+     },   
 
 ]
